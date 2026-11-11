@@ -1,16 +1,36 @@
-body {
-  min-height: 100vh;
+.theme-orange {
+  --bs-primary: #e8590c;
+  --bs-primary-rgb: 232, 89, 12;
+  --bs-primary-text-emphasis: #5d2405;
+  --bs-primary-bg-subtle: #ffe8d6;
+  --bs-link-color-rgb: 232, 89, 12;
+  --bs-link-hover-color-rgb: 194, 74, 10;
 }
 
-.placeholder-box {
-  min-height: 240px;
+.theme-orange .btn-primary,
+.theme-orange .btn-outline-primary {
+  --bs-btn-border-color: #e8590c;
+  --bs-btn-hover-bg: #c24a0a;
+  --bs-btn-hover-border-color: #c24a0a;
+  --bs-btn-active-bg: #e8590c;
+  --bs-btn-active-border-color: #e8590c;
 }
 
-.placeholder-image {
-  min-height: 320px;
+.theme-orange .btn-primary {
+  --bs-btn-bg: #e8590c;
 }
 
-.card-img-top {
-  height: 180px;
-  object-fit: cover;
+.theme-orange .btn-outline-primary {
+  --bs-btn-color: #e8590c;
+}
+
+:root {
+  scroll-behavior: auto;
+}
+
+*,
+*::before,
+*::after {
+  transition: none !important;
+  animation: none !important;
 }

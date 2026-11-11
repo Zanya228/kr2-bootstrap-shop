@@ -3,287 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каталог — Bootstrap Shop</title>
+  <title>Каталог аттракционов — Парк развлечений «Остров Мечты»</title>
 
   <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="css/custom.css">
 </head>
-
-<body class="bg-light">
+<body class="theme-orange">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+            <a class="navbar-brand" href="index.html">Остров Мечты</a>
 
             <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Переключить навигацию"
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Переключить навигацию"
             >
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="index.html">Главная</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link active" href="catalog.html">Каталог</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="product.html">Товар</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="order.html">Заявка</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                    Дополнительно
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
-                    <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
-                    <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="catalog.html">Аттракционы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Билеты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
                 </ul>
-                </li>
-            </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
-        <div class="alert alert-info" role="alert">
-        Выберите товар из каталога. Карточки товаров оформлены с помощью компонента Bootstrap `card`.
-        </div>
+    <main>
+        <section class="bg-light border-bottom">
+            <div class="container py-5">
+                <nav aria-label="Навигационная цепочка">
+                    <ol class="breadcrumb mb-3">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Аттракционы</li>
+                    </ol>
+                </nav>
+                <h1 class="display-5 fw-bold">Каталог аттракционов</h1>
+                <p class="lead text-primary fw-semibold mb-0">Выберите возраст, рост и тематику — мы покажем подходящие аттракционы.</p>
+            </div>
+        </section>
 
-        <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1 class="h2 mb-0">Каталог товаров</h1>
-        <a class="btn btn-outline-primary" href="order.html">
-            Оставить заявку
-        </a>
-        </div>
-
-        <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <h2 class="card-title h5">Товар 1</h2>
-                    <span class="badge bg-success">Новинка</span>
+        <section class="container my-5">
+            <div class="row g-4">
+            <aside class="col-12 col-lg-3">
+            <form class="card shadow-sm sticky-lg-top" aria-label="Фильтр аттракционов">
+                <div class="card-header bg-white">
+                    <h2 class="h5 mb-0">Фильтры</h2>
                 </div>
-
-                <p class="card-text text-muted">
-                    Краткое описание учебного товара для каталога.
-                </p>
-
-                <p class="fw-bold fs-5 mt-auto">1000 руб.</p>
-
-                <div class="d-flex gap-2">
-                    <a class="btn btn-primary" href="product.html">Подробнее</a>
-                    <button
-                    class="btn btn-outline-primary"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#orderModal"
-                    >
-                    Заказать
-                    </button>
+                <div class="card-body">
+                    <div class="row g-4">
+                    <div class="col-12">
+                        <p class="fw-semibold mb-2">Возраст гостя</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <input type="radio" class="btn-check" name="age" id="age-all" value="all" checked>
+                            <label class="btn btn-outline-primary btn-sm" for="age-all">Все</label>
+                            <input type="radio" class="btn-check" name="age" id="age-3" value="3">
+                            <label class="btn btn-outline-primary btn-sm" for="age-3">3–5 лет</label>
+                            <input type="radio" class="btn-check" name="age" id="age-6" value="6">
+                            <label class="btn btn-outline-primary btn-sm" for="age-6">6–9 лет</label>
+                            <input type="radio" class="btn-check" name="age" id="age-10" value="10">
+                            <label class="btn btn-outline-primary btn-sm" for="age-10">10–11 лет</label>
+                            <input type="radio" class="btn-check" name="age" id="age-12" value="12">
+                            <label class="btn btn-outline-primary btn-sm" for="age-12">12 лет и старше</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="fw-semibold mb-2">Рост гостя</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <input type="radio" class="btn-check" name="height" id="height-all" value="all" checked>
+                            <label class="btn btn-outline-primary btn-sm" for="height-all">Все</label>
+                            <input type="radio" class="btn-check" name="height" id="height-90" value="90">
+                            <label class="btn btn-outline-primary btn-sm" for="height-90">90–109 см</label>
+                            <input type="radio" class="btn-check" name="height" id="height-110" value="110">
+                            <label class="btn btn-outline-primary btn-sm" for="height-110">110–119 см</label>
+                            <input type="radio" class="btn-check" name="height" id="height-120" value="120">
+                            <label class="btn btn-outline-primary btn-sm" for="height-120">120–129 см</label>
+                            <input type="radio" class="btn-check" name="height" id="height-130" value="130">
+                            <label class="btn btn-outline-primary btn-sm" for="height-130">от 130 см</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="fw-semibold mb-2">Категория</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <input type="radio" class="btn-check" name="cat" id="cat-all" value="all" checked>
+                            <label class="btn btn-outline-primary btn-sm" for="cat-all">Все</label>
+                            <input type="radio" class="btn-check" name="cat" id="cat-extreme" value="extreme">
+                            <label class="btn btn-outline-primary btn-sm" for="cat-extreme">Экстрим</label>
+                            <input type="radio" class="btn-check" name="cat" id="cat-family" value="family">
+                            <label class="btn btn-outline-primary btn-sm" for="cat-family">Семейные</label>
+                            <input type="radio" class="btn-check" name="cat" id="cat-kids" value="kids">
+                            <label class="btn btn-outline-primary btn-sm" for="cat-kids">Детские</label>
+                            <input type="radio" class="btn-check" name="cat" id="cat-show" value="show">
+                            <label class="btn btn-outline-primary btn-sm" for="cat-show">Шоу и квесты</label>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="d-grid gap-3 mt-4">
+                        <button type="reset" class="btn btn-primary">Сбросить фильтры</button>
+                    </div>
                 </div>
+            </form>
+            </aside>
+
+            <div class="col-12 col-lg-9">
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic2.webp" class="card-img-top object-fit-cover" alt="Полёт в тоннеле"></div>
+                        <div class="card-body d-flex flex-column">
+                            <div><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 10 лет</span><span class="badge text-bg-light border mb-2">рост от 120 см</span></div>
+                            <h3 class="h5 card-title">Полёт в тоннеле</h3>
+                            <p class="card-text text-muted">Сумасшедший полёт на скоростном поезде по подземным линиям Нью-Йорка. Успеете ли вы скрыться от злодеев?</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="attraction-tunnel.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic3.webp" class="card-img-top object-fit-cover" alt="Молот судьбы"></div>
+                        <div class="card-body d-flex flex-column">
+                            <div><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 12 лет</span><span class="badge text-bg-light border mb-2">рост от 130 см</span></div>
+                            <h3 class="h5 card-title">Молот судьбы</h3>
+                            <p class="card-text text-muted">Подъём на 240 градусов — бешеная скорость и гарантированный прилив адреналина!</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="attraction-hammer.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic4.webp" class="card-img-top object-fit-cover" alt="Красная башня"></div>
+                        <div class="card-body d-flex flex-column">
+                            <div><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 10 лет</span><span class="badge text-bg-light border mb-2">рост от 120 см</span></div>
+                            <h3 class="h5 card-title">Красная башня</h3>
+                            <p class="card-text text-muted">Захватывающий полёт под стеклянным куполом «Острова Мечты»!</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="attraction-tower.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic5.webp" class="card-img-top object-fit-cover" alt="Сладкая карусель"></div>
+                        <div class="card-body d-flex flex-column">
+                            <div><span class="badge bg-info text-dark me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
+                            <h3 class="h5 card-title">Сладкая карусель</h3>
+                            <p class="card-text text-muted">Сладкая карусель – сказочное чаепитие!</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="attraction-sweet.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic6.webp" class="card-img-top object-fit-cover" alt="Ледяная карусель"></div>
+                        <div class="card-body d-flex flex-column">
+                            <div><span class="badge bg-success me-1 mb-2">Семейные</span><span class="badge text-bg-light border me-1 mb-2">от 6 лет</span><span class="badge text-bg-light border mb-2">рост от 110 см</span></div>
+                            <h3 class="h5 card-title">Ледяная карусель</h3>
+                            <p class="card-text text-muted">Аттракцион для тех, кто не боится холода!</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="attraction-ice.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic7.jpg" class="card-img-top object-fit-cover" alt="Автопоезд"></div>
+                        <div class="card-body d-flex flex-column">
+                            <div><span class="badge bg-info text-dark me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
+                            <h3 class="h5 card-title">Автопоезд</h3>
+                            <p class="card-text text-muted">Неспешная поездка на паровозике по сказочному городку.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="attraction-autotrain.html">Подробнее</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <h2 class="card-title h5">Товар 2</h2>
-                    <span class="badge bg-warning text-dark">Хит</span>
-                </div>
-
-                <p class="card-text text-muted">
-                    Краткое описание второго учебного товара.
-                </p>
-
-                <p class="fw-bold fs-5 mt-auto">1500 руб.</p>
-
-                <div class="d-flex gap-2">
-                    <a class="btn btn-primary" href="product.html">Подробнее</a>
-                    <button
-                    class="btn btn-outline-primary"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#orderModal"
-                    >
-                    Заказать
-                    </button>
-                </div>
-                </div>
             </div>
             </div>
-
-            <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
-                <div class="card-body d-flex flex-column">
-                <div class="d-flex justify-content-between align-items-start mb-3">
-                    <h2 class="card-title h5">Товар 3</h2>
-                    <span class="badge bg-danger">Скидка</span>
-                </div>
-
-                <p class="card-text text-muted">
-                    Краткое описание третьего учебного товара.
-                </p>
-
-                <p class="fw-bold fs-5 mt-auto">2000 руб.</p>
-
-                <div class="d-flex gap-2">
-                    <a class="btn btn-primary" href="product.html">Подробнее</a>
-                    <button
-                    class="btn btn-outline-primary"
-                    type="button"
-                    data-bs-toggle="modal"
-                    data-bs-target="#orderModal"
-                    >
-                    Заказать
-                    </button>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
+        </section>
     </main>
 
-    <div
-  class="modal fade"
-  id="orderModal"
-  tabindex="-1"
-  aria-labelledby="orderModalLabel"
-  aria-hidden="true"
->
-        <div class="modal-dialog">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title h5" id="orderModalLabel">
-                Быстрая заявка
-                </h2>
-                <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Закрыть"
-                ></button>
-            </div>
-
-            <div class="modal-body">
-                <p class="text-muted">
-                Оставьте контактные данные, и менеджер свяжется с вами.
-                </p>
-
-                <form>
-                <div class="mb-3">
-                    <label for="modal-name" class="form-label">Имя</label>
-                    <input id="modal-name" type="text" class="form-control" required>
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-12 col-md-6">
+                    <p class="mb-0">
+                        &copy; 2026 Парк развлечений «Остров Мечты». Учебный проект.
+                    </p>
                 </div>
 
-                <div class="mb-3">
-                    <label for="modal-phone" class="form-label">Телефон</label>
-                    <input id="modal-phone" type="tel" class="form-control" required>
+                <div class="col-12 col-md-6 text-md-end">
+                    <a class="text-white text-decoration-none me-3" href="index.html">Главная</a>
+                    <a class="text-white text-decoration-none me-3" href="catalog.html">Аттракционы</a>
+                    <a class="text-white text-decoration-none me-3" href="order.html">Билеты</a>
+                    <a class="text-white text-decoration-none" href="contacts.html">Контакты</a>
                 </div>
-
-                <div class="form-check mb-3">
-                    <input id="modal-agree" class="form-check-input" type="checkbox" required>
-                    <label class="form-check-label" for="modal-agree">
-                    Согласен на обработку данных
-                    </label>
-                </div>
-                </form>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-                Закрыть
-                </button>
-                <button type="button" class="btn btn-primary">
-                Отправить
-                </button>
-            </div>
             </div>
         </div>
-    </div>
-
-    <section class="container my-5">
-        <h2 class="h4 mb-3">Частые вопросы</h2>
-
-        <div class="accordion" id="faqAccordion">
-            <div class="accordion-item">
-            <h3 class="accordion-header">
-                <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqOne"
-                aria-expanded="true"
-                aria-controls="faqOne"
-                >
-                Можно ли оформить заявку без регистрации?
-                </button>
-            </h3>
-            <div
-                id="faqOne"
-                class="accordion-collapse collapse show"
-                data-bs-parent="#faqAccordion"
-            >
-                <div class="accordion-body">
-                Да, в учебном проекте заявка оформляется без регистрации.
-                </div>
-            </div>
-            </div>
-
-            <div class="accordion-item">
-            <h3 class="accordion-header">
-                <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faqTwo"
-                aria-expanded="false"
-                aria-controls="faqTwo"
-                >
-                Где используется Bootstrap?
-                </button>
-            </h3>
-            <div
-                id="faqTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#faqAccordion"
-            >
-                <div class="accordion-body">
-                Bootstrap используется для сетки, карточек, форм, навигации, сообщений и модальных окон.
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
+    </footer>
 
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
 </body>
 </html>
