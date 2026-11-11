@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная — Bootstrap Shop</title>
+  <title>Главная — Парк развлечений «Остров Мечты»</title>
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -11,217 +11,288 @@
   >
   <link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
-    <header class="bg-primary text-white py-4">
-        <div class="container">
-            <div class="row align-items-center">
-            <div class="col-12 col-md-8">
-                <h1 class="h3 mb-1">Bootstrap Shop</h1>
-                <p class="mb-0 opacity-75">
-                Учебный интернет-магазин на Bootstrap
-                </p>
-            </div>
-
-            <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
-                <span class="badge bg-light text-primary">
-                КР №2
-                </span>
-            </div>
-            </div>
-        </div>
-    </header>
-
+<body class="theme-orange">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+            <a class="navbar-brand" href="index.html">Остров Мечты</a>
 
             <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Переключить навигацию"
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Переключить навигацию"
             >
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                <a class="nav-link active" href="index.html">Главная</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="catalog.html">Каталог</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="product.html">Товар</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="order.html">Заявка</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                    Дополнительно
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
-                    <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
-                    <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Аттракционы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="order.html">Билеты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
                 </ul>
-                </li>
-            </ul>
             </div>
         </div>
     </nav>
 
-
     <main>
-        <section class="container my-5">
-            <div class="row align-items-center g-4">
-            <div class="col-12 col-lg-6">
-                <h2 class="display-5 fw-bold">
-                Учебный каталог товаров на Bootstrap
-                </h2>
-                <p class="lead text-muted">
-                Проект демонстрирует использование Bootstrap-сетки,
-                адаптивных колонок и базовых utility-классов.
-                </p>
-                <a class="btn btn-primary btn-lg" href="catalog.html">
-                Перейти в каталог
-                </a>
-            </div>
+        <section id="about" class="bg-light border-bottom">
+            <div class="container py-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-6">
+                        <h2 class="display-5 fw-bold">Добро пожаловать в «Остров Мечты»</h2>
+                        <p class="lead text-primary fw-semibold">
+                            Наша миссия — создавать яркие впечатления и незабываемые воспоминания, в которые хочется вернуться.
+                        </p>
+                        <p>
+                            «Остров Мечты» — локация для развлечений и отдыха, одна из знаковых достопримечательностей Москвы, расположенная в Нагатинской пойме, буквально в 10 минутах езды от центра столицы.
+                            Здесь есть все для того, чтобы вы могли вырваться из повседневной суеты и погрузиться в уникальную атмосферу волшебства и приключений!
+                        </p>
+                        <p>
+                            Наш развлекательный кластер занимает пространство в 100 га, что сопоставимо с площадью 140 футбольных полей. Для вас работают 16 развлекательных объектов — приходите с семьей или друзьями и будьте уверены, что каждый найдет себе занятие по душе.
+                        </p>
+                        <a class="btn btn-primary btn-lg me-2 mb-2" href="#attractions">Смотреть аттракционы</a>
+                        <a class="btn btn-outline-primary btn-lg mb-2" href="#map">Как добраться</a>
+                    </div>
 
-            <div class="col-12 col-lg-6">
-                <div class="p-5 bg-light border rounded text-center">
-                <p class="mb-0 text-muted">
-                    Здесь может быть изображение, баннер или промо-блок.
-                </p>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="container my-5">
-            <h2 class="text-center mb-4">Преимущества проекта</h2>
-
-            <div class="row g-4">
-                <div class="col-12 col-md-4">
-                <div class="p-4 border rounded h-100 bg-white">
-                    <h3 class="h5">Bootstrap-сетка</h3>
-                    <p class="mb-0 text-muted">
-                    Страница построена на 12-колоночной системе Bootstrap.
-                    </p>
-                </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                <div class="p-4 border rounded h-100 bg-white">
-                    <h3 class="h5">Адаптивность</h3>
-                    <p class="mb-0 text-muted">
-                    Колонки меняют ширину в зависимости от размера экрана.
-                    </p>
-                </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                <div class="p-4 border rounded h-100 bg-white">
-                    <h3 class="h5">Готовая база</h3>
-                    <p class="mb-0 text-muted">
-                    Проект подготовлен к добавлению карточек, форм и модальных окон.
-                    </p>
-                </div>
+                    <div class="col-12 col-lg-6">
+                        <img
+                            src="images/pic1.jpg"
+                            class="img-fluid rounded shadow"
+                            alt="Общий вид парка развлечений «Остров Мечты» с колесом обозрения"
+                        >
+                        <div class="row text-center mt-4 g-3">
+                            <div class="col-4">
+                                <div class="p-3 bg-white border rounded h-100">
+                                    <p class="h4 fw-bold text-primary mb-0">60+</p>
+                                    <p class="small text-muted mb-0">аттракционов</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-3 bg-white border rounded h-100">
+                                    <p class="h4 fw-bold text-primary mb-0">15</p>
+                                    <p class="small text-muted mb-0">тематических зон</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="p-3 bg-white border rounded h-100">
+                                    <p class="h4 fw-bold text-primary mb-0">12 ч</p>
+                                    <p class="small text-muted mb-0">работы в день</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container my-5">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2 class="mb-0">Популярные товары</h2>
-                <a class="btn btn-outline-primary" href="catalog.html">
-                Все товары
-                </a>
-            </div>
+        <section id="attractions" class="container my-5">
+            <h2 class="text-center mb-4">Популярные аттракционы</h2>
 
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
-                <div class="border rounded h-100 p-4">
-                    <span class="badge bg-success mb-3">Новинка</span>
-                    <h3 class="h5">Товар 1</h3>
-                    <p class="text-muted">
-                    Краткое описание учебного товара.
-                    </p>
-                    <p class="fw-bold mb-3">1000 руб.</p>
-                    <a class="btn btn-primary" href="product.html">
-                    Подробнее
-                    </a>
-                </div>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg-4">
-                <div class="border rounded h-100 p-4">
-                    <span class="badge bg-warning text-dark mb-3">Хит</span>
-                    <h3 class="h5">Товар 2</h3>
-                    <p class="text-muted">
-                    Краткое описание учебного товара.
-                    </p>
-                    <p class="fw-bold mb-3">1500 руб.</p>
-                    <a class="btn btn-primary" href="product.html">
-                    Подробнее
-                    </a>
-                </div>
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic2.webp" class="card-img-top object-fit-cover" alt="Полёт в тоннеле с мёртвыми петлями"></div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Полёт в тоннеле</h3>
+                            <p class="card-text text-muted">
+                                Сумасшедший полёт на скоростном поезде по подземным линиям Нью-Йорка. Успеете ли вы скрыться от злодеев?
+                            </p>
+                            <a class="btn btn-outline-primary" href="attraction-tunnel.html">Подробнее</a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
-                <div class="border rounded h-100 p-4">
-                    <span class="badge bg-danger mb-3">Скидка</span>
-                    <h3 class="h5">Товар 3</h3>
-                    <p class="text-muted">
-                    Краткое описание учебного товара.
-                    </p>
-                    <p class="fw-bold mb-3">2000 руб.</p>
-                    <a class="btn btn-primary" href="product.html">
-                    Подробнее
-                    </a>
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic3.webp" class="card-img-top object-fit-cover" alt="Молот судьбы"></div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Молот судьбы</h3>
+                            <p class="card-text text-muted">
+                                Подъем на 240 градусов – бешеная скорость и гарантированный прилив адреналина!
+                            </p>
+                            <a class="btn btn-outline-primary" href="attraction-hammer.html">Подробнее</a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="ratio ratio-16x9"><img src="images/pic4.webp" class="card-img-top object-fit-cover" alt="Красная башня"></div>
+                        <div class="card-body">
+                            <h3 class="h5 card-title">Красная башня</h3>
+                            <p class="card-text text-muted">
+                                Захватывающий полет под стеклянным куполом «Острова Мечты»!
+                            </p>
+                            <a class="btn btn-outline-primary" href="attraction-tower.html">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a class="btn btn-primary btn-lg" href="catalog.html">Все аттракционы</a>
+            </div>
+        </section>
+
+        <section id="map" class="bg-light border-top border-bottom">
+            <div class="container py-5">
+                <h2 class="text-center mb-4">Расположение на карте</h2>
+
+                <div class="row g-4">
+                    <div class="col-12 col-lg-4">
+                        <h3 class="h5">Адрес</h3>
+                        <p>г. Москва, проспект Андропова, д. 1 (Нагатинская пойма)</p>
+
+                        <h3 class="h5">Как добраться</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">
+                                <span class="badge bg-primary me-1">Метро</span>
+                                «Технопарк» (Замоскворецкая линия), около 5 минут пешком до входа.
+                            </li>
+                            <li class="mb-2">
+                                <span class="badge bg-primary me-1">Автобус</span>
+                                Наземный транспорт до остановки «Метро Технопарк».
+                            </li>
+                            <li class="mb-2">
+                                <span class="badge bg-primary me-1">Автомобиль</span>
+                                По проспекту Андропова, съезд к «Острову Мечты». У комплекса есть парковка.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-lg-8">
+                        <div class="ratio ratio-16x9 border rounded overflow-hidden">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?text=Остров%20Мечты%2C%20проспект%20Андропова%2C%201%2C%20Москва&amp;z=15"
+                                title="Карта: расположение парка развлечений «Остров Мечты»"
+                                loading="lazy"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <footer class="bg-dark text-white py-4 mt-5">
-            <div class="container">
-                <div class="row align-items-center g-3">
+        <section id="faq" class="container my-5">
+            <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-9">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    Где купить билеты?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Билеты продаются на официальном сайте dreamisland.ru и в кассах парка. Покупать онлайн удобнее: не нужно стоять в очереди, а электронный билет можно показать на входе с телефона.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    Зависит ли цена билета от роста?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Да. Категория билета определяется ростом гостя, а не возрастом: рост измеряют на входе. Стоимость также зависит от дня посещения (будни или выходные). Актуальные цены смотрите на сайте парка.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    Есть ли ограничения на аттракционах?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    У каждого аттракциона свои требования по росту, а иногда и по состоянию здоровья. Они указаны на табличке у входа на аттракцион. Маленькие дети катаются только в сопровождении взрослого.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    Работает ли парк в плохую погоду?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Да. Тематический парк «Острова Мечты» крытый: аттракционы находятся под стеклянным куполом, поэтому дождь, снег и мороз не помешают отдыху в любое время года.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                                    Можно ли приносить свою еду?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Правила парка не разрешают проносить свою еду и напитки. На территории работают кафе и рестораны на любой вкус и бюджет.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                                    Что ещё есть на «Острове Мечты», кроме аттракционов?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Кроме тематического парка, в комплексе есть торговая галерея с магазинами, кинотеатр, концертный зал, рестораны и большой ландшафтный парк для прогулок.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center g-3">
                 <div class="col-12 col-md-6">
                     <p class="mb-0">
-                    &copy; 2026 Bootstrap Shop. Учебный проект.
+                        &copy; 2026 Парк развлечений «Остров Мечты». Учебный проект.
                     </p>
                 </div>
 
                 <div class="col-12 col-md-6 text-md-end">
-                    <a class="text-white text-decoration-none me-3" href="catalog.html">
-                    Каталог
-                    </a>
-                    <a class="text-white text-decoration-none" href="order.html">
-                    Заявка
-                    </a>
-                </div>
+                    <a class="text-white text-decoration-none me-3" href="#about">О парке</a>
+                    <a class="text-white text-decoration-none me-3" href="#attractions">Аттракционы</a>
+                    <a class="text-white text-decoration-none me-3" href="#map">Карта</a>
+                    <a class="text-white text-decoration-none" href="#faq">FAQ</a>
                 </div>
             </div>
-        </footer>
-
-    </main>
-
+        </div>
+    </footer>
 
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">

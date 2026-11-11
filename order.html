@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная — Bootstrap Shop</title>
+  <title>Билеты — Парк развлечений «Остров Мечты»</title>
 
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -11,136 +11,232 @@
   >
   <link rel="stylesheet" href="css/custom.css">
 </head>
-<body>
+<body class="theme-orange">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
+            <a class="navbar-brand" href="index.html">Остров Мечты</a>
 
             <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-            aria-controls="mainNavbar"
-            aria-expanded="false"
-            aria-label="Переключить навигацию"
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Переключить навигацию"
             >
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="index.html">Главная</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="catalog.html">Каталог</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link" href="product.html">Товар</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link active" href="order.html">Заявка</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                >
-                    Дополнительно
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
-                    <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
-                    <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Аттракционы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="order.html">Билеты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
                 </ul>
-                </li>
-            </ul>
             </div>
         </div>
     </nav>
 
-    <main class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-8">
-            <div class="card shadow-sm">
-                <div class="card-header bg-primary text-white">
-                <h1 class="h4 mb-0">Форма заявки</h1>
-                </div>
+    <main>
+        <section class="bg-light border-bottom">
+            <div class="container py-5">
+                <nav aria-label="Навигационная цепочка">
+                    <ol class="breadcrumb mb-3">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Билеты</li>
+                    </ol>
+                </nav>
+                <h1 class="display-5 fw-bold">Билеты</h1>
+                <p class="lead text-primary fw-semibold mb-0">Выберите билеты — дату посещения укажете при оформлении.</p>
+            </div>
+        </section>
 
-                <div class="card-body">
-                <div class="alert alert-info" role="alert">
-                    Заполните форму. Поля со звёздочкой являются обязательными.
-                </div>
-
-                <form>
-                    <div class="row g-3">
-                    <div class="col-12 col-md-6">
-                        <label for="order-name" class="form-label">Имя *</label>
-                        <input id="order-name" name="name" type="text" class="form-control" required>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <label for="order-email" class="form-label">E-mail *</label>
-                        <input id="order-email" name="email" type="email" class="form-control" required>
-                    </div>
-
-                    <div class="col-12 col-md-6">
-                        <label for="order-phone" class="form-label">Телефон</label>
-                        <div class="input-group">
-                        <span class="input-group-text">+7</span>
-                        <input id="order-phone" name="phone" type="tel" class="form-control" placeholder="900 000-00-00">
+        <form class="container my-5" action="#" method="post">
+            <h2 class="mb-4" id="typeTitle">Тип билета</h2>
+            <div class="row g-4">
+                <section class="col-12 col-lg-8" aria-labelledby="typeTitle">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-2">
+                                        <h3 class="h5 card-title mb-1">Билет Стандартный</h3>
+                                        <span class="badge text-bg-light border text-nowrap">На 1 гостя</span>
+                                    </div>
+                                    <p class="h4 fw-bold text-primary mb-3">3&nbsp;000&nbsp;₽</p>
+                                    <div>
+                                        <span class="small text-muted d-block mb-1" id="qlabel-std">Количество:</span>
+                                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="qlabel-std">
+                                            <input type="radio" class="btn-check" name="qty_std" id="q-std-0" value="0" checked><label class="btn btn-outline-primary" for="q-std-0">0</label><input type="radio" class="btn-check" name="qty_std" id="q-std-1" value="1"><label class="btn btn-outline-primary" for="q-std-1">1</label><input type="radio" class="btn-check" name="qty_std" id="q-std-2" value="2"><label class="btn btn-outline-primary" for="q-std-2">2</label><input type="radio" class="btn-check" name="qty_std" id="q-std-3" value="3"><label class="btn btn-outline-primary" for="q-std-3">3</label><input type="radio" class="btn-check" name="qty_std" id="q-std-4" value="4"><label class="btn btn-outline-primary" for="q-std-4">4</label><input type="radio" class="btn-check" name="qty_std" id="q-std-5" value="5"><label class="btn btn-outline-primary" for="q-std-5">5</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-2">
+                                        <h3 class="h5 card-title mb-1">Экспресс-вход</h3>
+                                        <span class="badge text-bg-light border text-nowrap">На 1 гостя</span>
+                                    </div>
+                                    <p class="h4 fw-bold text-primary mb-3">9&nbsp;000&nbsp;₽</p>
+                                    <div>
+                                        <span class="small text-muted d-block mb-1" id="qlabel-exp">Количество:</span>
+                                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="qlabel-exp">
+                                            <input type="radio" class="btn-check" name="qty_exp" id="q-exp-0" value="0" checked><label class="btn btn-outline-primary" for="q-exp-0">0</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-1" value="1"><label class="btn btn-outline-primary" for="q-exp-1">1</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-2" value="2"><label class="btn btn-outline-primary" for="q-exp-2">2</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-3" value="3"><label class="btn btn-outline-primary" for="q-exp-3">3</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-4" value="4"><label class="btn btn-outline-primary" for="q-exp-4">4</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-5" value="5"><label class="btn btn-outline-primary" for="q-exp-5">5</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-2">
+                                        <h3 class="h5 card-title mb-1">Семейный 3</h3>
+                                        <span class="badge text-bg-light border text-nowrap">На 3 гостей</span>
+                                    </div>
+                                    <p class="h4 fw-bold text-primary mb-3">8&nbsp;500&nbsp;₽</p>
+                                    <div>
+                                        <span class="small text-muted d-block mb-1" id="qlabel-f3">Количество:</span>
+                                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="qlabel-f3">
+                                            <input type="radio" class="btn-check" name="qty_f3" id="q-f3-0" value="0" checked><label class="btn btn-outline-primary" for="q-f3-0">0</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-1" value="1"><label class="btn btn-outline-primary" for="q-f3-1">1</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-2" value="2"><label class="btn btn-outline-primary" for="q-f3-2">2</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-3" value="3"><label class="btn btn-outline-primary" for="q-f3-3">3</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-4" value="4"><label class="btn btn-outline-primary" for="q-f3-4">4</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-5" value="5"><label class="btn btn-outline-primary" for="q-f3-5">5</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-start gap-2">
+                                        <h3 class="h5 card-title mb-1">Семейный 4</h3>
+                                        <span class="badge text-bg-light border text-nowrap">На 4 гостей</span>
+                                    </div>
+                                    <p class="h4 fw-bold text-primary mb-3">10&nbsp;800&nbsp;₽</p>
+                                    <div>
+                                        <span class="small text-muted d-block mb-1" id="qlabel-f4">Количество:</span>
+                                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="qlabel-f4">
+                                            <input type="radio" class="btn-check" name="qty_f4" id="q-f4-0" value="0" checked><label class="btn btn-outline-primary" for="q-f4-0">0</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-1" value="1"><label class="btn btn-outline-primary" for="q-f4-1">1</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-2" value="2"><label class="btn btn-outline-primary" for="q-f4-2">2</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-3" value="3"><label class="btn btn-outline-primary" for="q-f4-3">3</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-4" value="4"><label class="btn btn-outline-primary" for="q-f4-4">4</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-5" value="5"><label class="btn btn-outline-primary" for="q-f4-5">5</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="col-12 col-md-6">
-                        <label for="order-product" class="form-label">Товар</label>
-                        <select id="order-product" name="product" class="form-select">
-                        <option selected>Выберите товар</option>
-                        <option value="product-1">Товар 1</option>
-                        <option value="product-2">Товар 2</option>
-                        <option value="product-3">Товар 3</option>
-                        </select>
+                    <div class="alert alert-light border small mt-4 mb-0">
+                        Билет действует на все аттракционы в день посещения. Гости ростом ниже 100 см проходят бесплатно со взрослым.
+                        Стоимость в кассах может отличаться.
                     </div>
+                </section>
 
-                    <div class="col-12">
-                        <label for="order-comment" class="form-label">Комментарий</label>
-                        <textarea id="order-comment" name="comment" class="form-control" rows="4"></textarea>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                        <input id="order-agree" class="form-check-input" type="checkbox" required>
-                        <label class="form-check-label" for="order-agree">
-                            Я согласен на обработку данных *
-                        </label>
+                <aside class="col-12 col-lg-4">
+                    <div class="card shadow-sm sticky-lg-top">
+                        <div class="card-header bg-white">
+                            <h2 class="h5 mb-0">Ваш заказ</h2>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h6 text-muted">Выбрано</h3>
+                            <ul class="list-unstyled mb-0">
+                                <li class="text-muted">Билеты не выбраны</li>
+                            </ul>
+                            <hr>
+                            <h3 class="h6 text-muted">Итого к оплате</h3>
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <span>Итоговая сумма</span>
+                                <span class="h4 fw-bold text-primary mb-0">0 ₽</span>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#buyModal">
+                                Далее
+                            </button>
                         </div>
                     </div>
+                </aside>
+            </div>
 
-                    <div class="col-12 d-flex gap-2">
-                        <button class="btn btn-primary" type="submit">
-                        Отправить заявку
-                        </button>
-                        <button class="btn btn-outline-secondary" type="reset">
-                        Очистить
-                        </button>
+            <div class="modal" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title h5" id="buyModalLabel">Данные покупателя</h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="visitDate" class="form-label">Дата посещения</label>
+                                    <input type="date" class="form-control" id="visitDate" name="date" min="2026-11-11" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="buyerName" class="form-label">ФИО</label>
+                                    <input type="text" class="form-control" id="buyerName" name="name" autocomplete="name" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="buyerPhone" class="form-label">Телефон</label>
+                                    <input type="tel" class="form-control" id="buyerPhone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="buyerEmail" class="form-label">E-mail для билетов</label>
+                                    <input type="email" class="form-control" id="buyerEmail" name="email" autocomplete="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="agree" name="agree" required>
+                                        <label class="form-check-label" for="agree">
+                                            Согласен с правилами посещения парка и обработкой персональных данных
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-between p-3 bg-light border rounded">
+                                        <span>К оплате</span>
+                                        <span class="fw-bold text-primary">0 ₽</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Назад</button>
+                            <button type="submit" class="btn btn-primary">Перейти к оплате</button>
+                        </div>
                     </div>
-                    </div>
-                </form>
                 </div>
             </div>
-            </div>
-        </div>
+        </form>
     </main>
 
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-12 col-md-6">
+                    <p class="mb-0">
+                        &copy; 2026 Парк развлечений «Остров Мечты». Учебный проект.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-6 text-md-end">
+                    <a class="text-white text-decoration-none me-3" href="index.html">Главная</a>
+                    <a class="text-white text-decoration-none me-3" href="catalog.html">Аттракционы</a>
+                    <a class="text-white text-decoration-none me-3" href="order.html">Билеты</a>
+                    <a class="text-white text-decoration-none" href="contacts.html">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
 </body>
+</html>
