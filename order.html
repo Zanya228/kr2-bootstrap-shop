@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="theme-orange">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Остров Мечты</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container position-relative">
+            <a class="navbar-brand d-inline-flex align-items-center gap-2 fw-bold" href="index.html"><span class="d-inline-flex align-items-center justify-content-center bg-primary rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M3 21V9l3-4 3 4v3h2V5H9V2h2v1h4v3h-2v6h2V9l3-4 3 4v12h-7v-5a2 2 0 0 0-4 0v5H3Zm2-10v3h2v-3H5Zm12 0v3h2v-3h-2Z"/></svg></span><span>Остров <span class="text-primary">Мечты</span></span></a>
 
             <button
                 class="navbar-toggler"
@@ -29,7 +29,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Главная</a>
                     </li>
@@ -49,188 +49,206 @@
 
     <main>
         <section class="bg-light border-bottom">
-            <div class="container py-5">
-                <nav aria-label="Навигационная цепочка">
-                    <ol class="breadcrumb mb-3">
-                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Билеты</li>
-                    </ol>
-                </nav>
-                <h1 class="display-5 fw-bold">Билеты</h1>
-                <p class="lead text-primary fw-semibold mb-0">Выберите билеты — дату посещения укажете при оформлении.</p>
+            <div class="container py-4">
+                <nav aria-label="Навигационная цепочка"><ol class="breadcrumb mb-3"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item active" aria-current="page">Билеты</li></ol></nav>
+                <h1 class="display-5 fw-bold">Ваш день на «Острове Мечты»</h1>
+                <p class="lead text-primary fw-semibold mb-0">Выберите дату и билеты — соберите своё приключение.</p>
             </div>
         </section>
-
-        <form class="container my-5" action="#" method="post">
-            <h2 class="mb-4" id="typeTitle">Тип билета</h2>
-            <div class="row g-4">
-                <section class="col-12 col-lg-8" aria-labelledby="typeTitle">
-                    <div class="row g-4">
-                        <div class="col-12 col-md-6">
-                            <div class="card h-100 shadow-sm">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-start gap-2">
-                                        <h3 class="h5 card-title mb-1">Билет Стандартный</h3>
-                                        <span class="badge text-bg-light border text-nowrap">На 1 гостя</span>
-                                    </div>
-                                    <p class="h4 fw-bold text-primary mb-3">3&nbsp;000&nbsp;₽</p>
-                                    <div>
-                                        <span class="small text-muted d-block mb-1" id="qlabel-std">Количество:</span>
-                                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="qlabel-std">
-                                            <input type="radio" class="btn-check" name="qty_std" id="q-std-0" value="0" checked><label class="btn btn-outline-primary" for="q-std-0">0</label><input type="radio" class="btn-check" name="qty_std" id="q-std-1" value="1"><label class="btn btn-outline-primary" for="q-std-1">1</label><input type="radio" class="btn-check" name="qty_std" id="q-std-2" value="2"><label class="btn btn-outline-primary" for="q-std-2">2</label><input type="radio" class="btn-check" name="qty_std" id="q-std-3" value="3"><label class="btn btn-outline-primary" for="q-std-3">3</label><input type="radio" class="btn-check" name="qty_std" id="q-std-4" value="4"><label class="btn btn-outline-primary" for="q-std-4">4</label><input type="radio" class="btn-check" name="qty_std" id="q-std-5" value="5"><label class="btn btn-outline-primary" for="q-std-5">5</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card h-100 shadow-sm">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-start gap-2">
-                                        <h3 class="h5 card-title mb-1">Экспресс-вход</h3>
-                                        <span class="badge text-bg-light border text-nowrap">На 1 гостя</span>
-                                    </div>
-                                    <p class="h4 fw-bold text-primary mb-3">9&nbsp;000&nbsp;₽</p>
-                                    <div>
-                                        <span class="small text-muted d-block mb-1" id="qlabel-exp">Количество:</span>
-                                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="qlabel-exp">
-                                            <input type="radio" class="btn-check" name="qty_exp" id="q-exp-0" value="0" checked><label class="btn btn-outline-primary" for="q-exp-0">0</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-1" value="1"><label class="btn btn-outline-primary" for="q-exp-1">1</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-2" value="2"><label class="btn btn-outline-primary" for="q-exp-2">2</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-3" value="3"><label class="btn btn-outline-primary" for="q-exp-3">3</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-4" value="4"><label class="btn btn-outline-primary" for="q-exp-4">4</label><input type="radio" class="btn-check" name="qty_exp" id="q-exp-5" value="5"><label class="btn btn-outline-primary" for="q-exp-5">5</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card h-100 shadow-sm">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-start gap-2">
-                                        <h3 class="h5 card-title mb-1">Семейный 3</h3>
-                                        <span class="badge text-bg-light border text-nowrap">На 3 гостей</span>
-                                    </div>
-                                    <p class="h4 fw-bold text-primary mb-3">8&nbsp;500&nbsp;₽</p>
-                                    <div>
-                                        <span class="small text-muted d-block mb-1" id="qlabel-f3">Количество:</span>
-                                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="qlabel-f3">
-                                            <input type="radio" class="btn-check" name="qty_f3" id="q-f3-0" value="0" checked><label class="btn btn-outline-primary" for="q-f3-0">0</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-1" value="1"><label class="btn btn-outline-primary" for="q-f3-1">1</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-2" value="2"><label class="btn btn-outline-primary" for="q-f3-2">2</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-3" value="3"><label class="btn btn-outline-primary" for="q-f3-3">3</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-4" value="4"><label class="btn btn-outline-primary" for="q-f3-4">4</label><input type="radio" class="btn-check" name="qty_f3" id="q-f3-5" value="5"><label class="btn btn-outline-primary" for="q-f3-5">5</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="card h-100 shadow-sm">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-start gap-2">
-                                        <h3 class="h5 card-title mb-1">Семейный 4</h3>
-                                        <span class="badge text-bg-light border text-nowrap">На 4 гостей</span>
-                                    </div>
-                                    <p class="h4 fw-bold text-primary mb-3">10&nbsp;800&nbsp;₽</p>
-                                    <div>
-                                        <span class="small text-muted d-block mb-1" id="qlabel-f4">Количество:</span>
-                                        <div class="btn-group btn-group-sm" role="group" aria-labelledby="qlabel-f4">
-                                            <input type="radio" class="btn-check" name="qty_f4" id="q-f4-0" value="0" checked><label class="btn btn-outline-primary" for="q-f4-0">0</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-1" value="1"><label class="btn btn-outline-primary" for="q-f4-1">1</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-2" value="2"><label class="btn btn-outline-primary" for="q-f4-2">2</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-3" value="3"><label class="btn btn-outline-primary" for="q-f4-3">3</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-4" value="4"><label class="btn btn-outline-primary" for="q-f4-4">4</label><input type="radio" class="btn-check" name="qty_f4" id="q-f4-5" value="5"><label class="btn btn-outline-primary" for="q-f4-5">5</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <div class="container my-5" id="ticket-booking">
+            <div class="row g-4 gx-xl-5 align-items-start">
+                <section class="col-12 col-lg-6 col-xl-4" aria-labelledby="date-title">
+                    <h2 class="h4 fw-bold mb-4" id="date-title">Выберите дату</h2>
+                    <div class="bg-light rounded-4 p-3 mb-4">
+                        <p class="small mb-3">Стоимость стандартного билета:</p>
+                        <div class="row g-1 text-center small">
+                            <div class="col"><span>2 800 ₽</span><div class="bg-primary-subtle py-1 mt-2"></div></div>
+                            <div class="col"><span>3 000 ₽</span><div class="bg-warning-subtle py-1 mt-2"></div></div>
+                            <div class="col"><span>3 100 ₽</span><div class="bg-warning py-1 mt-2"></div></div>
+                            <div class="col"><span>3 300 ₽</span><div class="bg-primary py-1 mt-2"></div></div>
                         </div>
                     </div>
-                    <div class="alert alert-light border small mt-4 mb-0">
-                        Билет действует на все аттракционы в день посещения. Гости ростом ниже 100 см проходят бесплатно со взрослым.
-                        Стоимость в кассах может отличаться.
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <button type="button" id="previous-month" class="btn btn-outline-secondary border-0" aria-label="Предыдущий месяц">←</button>
+                        <h3 class="h6 fw-bold mb-0 text-capitalize" id="calendar-month" aria-live="polite"></h3>
+                        <button type="button" id="next-month" class="btn btn-outline-secondary border-0" aria-label="Следующий месяц">→</button>
+                    </div>
+                    <div class="ticket-calendar text-center small text-body-secondary mb-2" aria-hidden="true"><span>ПН</span><span>ВТ</span><span>СР</span><span>ЧТ</span><span>ПТ</span><span>СБ</span><span>ВС</span></div>
+                    <div class="ticket-calendar" id="calendar-days" role="group" aria-label="Выберите день посещения"></div>
+                    <p class="small text-body-secondary bg-light p-3 mt-3 mb-4">ⓘ Стоимость в кассах может отличаться. Цены на сайте приведены для учебного оформления заказа.</p>
+                    <div class="border-top pt-4">
+                        <h2 class="h4 fw-bold mb-3">Время посещения</h2>
+                        <input class="btn-check" type="radio" name="visit-time" id="visit-time" checked>
+                        <label class="btn btn-outline-primary rounded-pill" for="visit-time">12:00 – 22:00</label>
                     </div>
                 </section>
-
-                <aside class="col-12 col-lg-4">
-                    <div class="card shadow-sm sticky-lg-top">
-                        <div class="card-header bg-white">
-                            <h2 class="h5 mb-0">Ваш заказ</h2>
-                        </div>
-                        <div class="card-body">
-                            <h3 class="h6 text-muted">Выбрано</h3>
-                            <ul class="list-unstyled mb-0">
-                                <li class="text-muted">Билеты не выбраны</li>
-                            </ul>
-                            <hr>
-                            <h3 class="h6 text-muted">Итого к оплате</h3>
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <span>Итоговая сумма</span>
-                                <span class="h4 fw-bold text-primary mb-0">0 ₽</span>
+                <section class="col-12 col-lg-6 col-xl-4" aria-labelledby="ticket-title">
+                    <h2 class="h4 fw-bold mb-4" id="ticket-title">Тип билета</h2>
+                        <article class="card rounded-4 mb-3" data-ticket="standard">
+                            <div class="card-body p-3 p-xl-4">
+                                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                                    <h3 class="h5 fw-bold mb-0">Билет Стандартный</h3>
+                                    <div class="d-flex align-items-center gap-2 flex-shrink-0" role="group" aria-label="Количество: Билет Стандартный">
+                                        <button type="button" class="btn btn-outline-primary btn-sm px-2" data-quantity="-1" aria-label="Убрать: Билет Стандартный">−</button>
+                                        <output class="text-center" data-count aria-label="Выбранное количество">0</output>
+                                        <button type="button" class="btn btn-outline-primary btn-sm px-2" data-quantity="1" aria-label="Добавить: Билет Стандартный">+</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between gap-2 align-items-center mb-3">
+                                    <p class="h5 text-primary fw-bold mb-0" data-price></p>
+                                    <span class="small text-body-secondary">На 1 гостя</span>
+                                </div>
+                                <button class="btn btn-link text-body-secondary text-decoration-none p-0 small" type="button" data-bs-toggle="collapse" data-bs-target="#included-standard" aria-expanded="false" aria-controls="included-standard">Что включено <span class="text-primary ms-1" aria-hidden="true">↓</span></button>
+                                <div class="collapse" id="included-standard"><p class="small text-body-secondary mt-3 mb-0">Посещение парка на одного гостя. Допуск на аттракционы — по возрасту и росту.</p></div>
                             </div>
-                            <button type="button" class="btn btn-primary btn-lg w-100" data-bs-toggle="modal" data-bs-target="#buyModal">
-                                Далее
-                            </button>
+                        </article>                        <article class="card rounded-4 mb-3" data-ticket="express">
+                            <div class="card-body p-3 p-xl-4">
+                                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                                    <h3 class="h5 fw-bold mb-0">Экспресс-вход</h3>
+                                    <div class="d-flex align-items-center gap-2 flex-shrink-0" role="group" aria-label="Количество: Экспресс-вход">
+                                        <button type="button" class="btn btn-outline-primary btn-sm px-2" data-quantity="-1" aria-label="Убрать: Экспресс-вход">−</button>
+                                        <output class="text-center" data-count aria-label="Выбранное количество">0</output>
+                                        <button type="button" class="btn btn-outline-primary btn-sm px-2" data-quantity="1" aria-label="Добавить: Экспресс-вход">+</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between gap-2 align-items-center mb-3">
+                                    <p class="h5 text-primary fw-bold mb-0" data-price></p>
+                                    <span class="small text-body-secondary">На 1 гостя</span>
+                                </div>
+                                <button class="btn btn-link text-body-secondary text-decoration-none p-0 small" type="button" data-bs-toggle="collapse" data-bs-target="#included-express" aria-expanded="false" aria-controls="included-express">Что включено <span class="text-primary ms-1" aria-hidden="true">↓</span></button>
+                                <div class="collapse" id="included-express"><p class="small text-body-secondary mt-3 mb-0">Посещение на одного гостя с приоритетным проходом на доступные аттракционы.</p></div>
+                            </div>
+                        </article>                        <article class="card rounded-4 mb-3" data-ticket="family3">
+                            <div class="card-body p-3 p-xl-4">
+                                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                                    <h3 class="h5 fw-bold mb-0">Семейный 3</h3>
+                                    <div class="d-flex align-items-center gap-2 flex-shrink-0" role="group" aria-label="Количество: Семейный 3">
+                                        <button type="button" class="btn btn-outline-primary btn-sm px-2" data-quantity="-1" aria-label="Убрать: Семейный 3">−</button>
+                                        <output class="text-center" data-count aria-label="Выбранное количество">0</output>
+                                        <button type="button" class="btn btn-outline-primary btn-sm px-2" data-quantity="1" aria-label="Добавить: Семейный 3">+</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between gap-2 align-items-center mb-3">
+                                    <p class="h5 text-primary fw-bold mb-0" data-price></p>
+                                    <span class="small text-body-secondary">На 3 гостя</span>
+                                </div>
+                                <button class="btn btn-link text-body-secondary text-decoration-none p-0 small" type="button" data-bs-toggle="collapse" data-bs-target="#included-family3" aria-expanded="false" aria-controls="included-family3">Что включено <span class="text-primary ms-1" aria-hidden="true">↓</span></button>
+                                <div class="collapse" id="included-family3"><p class="small text-body-secondary mt-3 mb-0">Единый билет для совместного посещения парка тремя гостями.</p></div>
+                            </div>
+                        </article>                        <article class="card rounded-4 mb-3" data-ticket="family4">
+                            <div class="card-body p-3 p-xl-4">
+                                <div class="d-flex justify-content-between align-items-start gap-2 mb-2">
+                                    <h3 class="h5 fw-bold mb-0">Семейный 4</h3>
+                                    <div class="d-flex align-items-center gap-2 flex-shrink-0" role="group" aria-label="Количество: Семейный 4">
+                                        <button type="button" class="btn btn-outline-primary btn-sm px-2" data-quantity="-1" aria-label="Убрать: Семейный 4">−</button>
+                                        <output class="text-center" data-count aria-label="Выбранное количество">0</output>
+                                        <button type="button" class="btn btn-outline-primary btn-sm px-2" data-quantity="1" aria-label="Добавить: Семейный 4">+</button>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between gap-2 align-items-center mb-3">
+                                    <p class="h5 text-primary fw-bold mb-0" data-price></p>
+                                    <span class="small text-body-secondary">На 4 гостя</span>
+                                </div>
+                                <button class="btn btn-link text-body-secondary text-decoration-none p-0 small" type="button" data-bs-toggle="collapse" data-bs-target="#included-family4" aria-expanded="false" aria-controls="included-family4">Что включено <span class="text-primary ms-1" aria-hidden="true">↓</span></button>
+                                <div class="collapse" id="included-family4"><p class="small text-body-secondary mt-3 mb-0">Единый билет для совместного посещения парка четырьмя гостями.</p></div>
+                            </div>
+                        </article>
+                </section>
+                <aside class="col-12 col-xl-4" aria-labelledby="summary-title">
+                    <div class="card border-0 shadow rounded-4">
+                        <div class="card-body p-4">
+                            <span class="badge rounded-pill text-body-secondary border px-3 py-2 mb-4" id="booking-step">ШАГ 1 ИЗ 3</span>
+                            <div class="border-top pt-4">
+                                <h2 class="h6 text-uppercase text-body-secondary fw-bold mb-3" id="summary-title">Выбрано</h2>
+                                <p id="selected-date"></p>
+                                <ul class="list-unstyled small mb-4" id="selected-tickets"></ul>
+                            </div>
+                            <div class="border-top pt-4" aria-live="polite" aria-atomic="true">
+                                <h3 class="h6 text-uppercase text-body-secondary fw-bold mb-4">Итого к оплате</h3>
+                                <div class="d-flex justify-content-between align-items-center gap-3 mb-4"><span>Итоговая сумма</span><strong class="fs-4 text-primary text-nowrap" id="booking-total">0 ₽</strong></div>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg rounded-pill w-100" id="booking-next" data-bs-toggle="modal" data-bs-target="#buyModal">Оформить</button>
+                            <p class="small text-body-secondary mt-3 mb-0" id="booking-hint">Выберите хотя бы один билет.</p>
                         </div>
                     </div>
                 </aside>
             </div>
-
-            <div class="modal" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h2 class="modal-title h5" id="buyModalLabel">Данные покупателя</h2>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                        </div>
+        </div>
+        <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="buyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content rounded-4">
+                    <div class="modal-header"><h2 class="modal-title fs-5" id="buyModalLabel">Данные покупателя · шаг 2 из 3</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div>
+                    <form id="buyer-form">
                         <div class="modal-body">
-                            <div class="row g-3">
-                                <div class="col-12">
-                                    <label for="visitDate" class="form-label">Дата посещения</label>
-                                    <input type="date" class="form-control" id="visitDate" name="date" min="2026-11-11" required>
-                                </div>
-                                <div class="col-12">
-                                    <label for="buyerName" class="form-label">ФИО</label>
-                                    <input type="text" class="form-control" id="buyerName" name="name" autocomplete="name" required>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="buyerPhone" class="form-label">Телефон</label>
-                                    <input type="tel" class="form-control" id="buyerPhone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <label for="buyerEmail" class="form-label">E-mail для билетов</label>
-                                    <input type="email" class="form-control" id="buyerEmail" name="email" autocomplete="email" required>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="agree" name="agree" required>
-                                        <label class="form-check-label" for="agree">
-                                            Согласен с правилами посещения парка и обработкой персональных данных
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex justify-content-between p-3 bg-light border rounded">
-                                        <span>К оплате</span>
-                                        <span class="fw-bold text-primary">0 ₽</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <p class="small text-body-secondary" id="buyer-visit"></p>
+                            <div class="mb-3"><label for="buyerName" class="form-label">Имя и фамилия</label><input type="text" class="form-control" id="buyerName" name="name" autocomplete="name" required></div>
+                            <div class="mb-3"><label for="buyerPhone" class="form-label">Телефон</label><input type="tel" class="form-control" id="buyerPhone" name="phone" autocomplete="tel" required></div>
+                            <div class="mb-3"><label for="buyerEmail" class="form-label">E-mail для билетов</label><input type="email" class="form-control" id="buyerEmail" name="email" autocomplete="email" required></div>
+                            <div class="form-check"><input type="checkbox" class="form-check-input" id="agree" required><label class="form-check-label small" for="agree">Согласен с правилами посещения и обработкой персональных данных</label></div>
+                            <div class="bg-light rounded-3 p-3 d-flex justify-content-between mt-4"><span>К оплате</span><strong class="text-primary" id="buyer-total"></strong></div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Назад</button>
-                            <button type="submit" class="btn btn-primary">Перейти к оплате</button>
-                        </div>
+                        <div class="modal-footer"><button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Назад</button><button type="submit" class="btn btn-primary">Проверить заказ</button></div>
+                    </form>
+                    <div class="modal-body d-none" id="booking-review" tabindex="-1">
+                        <h3 class="h5 mb-3">Проверьте ваше приключение</h3>
+                        <p id="review-date"></p><ul class="list-unstyled" id="review-tickets"></ul>
+                        <p>Покупатель: <strong id="review-name"></strong></p><p>E-mail: <span id="review-email"></span></p>
+                        <p class="fs-5">Итого: <strong class="text-primary" id="review-total"></strong></p>
+                        <div class="alert alert-light border small">Это учебный заказ. Оплата и отправка билетов пока не подключены; данные никуда не отправляются.</div>
+                        <button type="button" class="btn btn-outline-primary" id="edit-buyer">Изменить данные</button>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
+        <noscript><p class="container alert alert-warning">Для выбора даты и расчёта стоимости включите JavaScript.</p></noscript>
     </main>
 
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-black text-white pt-5 pb-4 mt-5">
         <div class="container">
-            <div class="row align-items-center g-3">
-                <div class="col-12 col-md-6">
-                    <p class="mb-0">
-                        &copy; 2026 Парк развлечений «Остров Мечты». Учебный проект.
-                    </p>
+            <div class="row g-4 gx-lg-5 pb-5">
+                <div class="col-12 col-lg-5">
+                    <a class="d-inline-flex align-items-center gap-2 text-white text-decoration-none fw-bold fs-5 mb-3" href="index.html">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-primary rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M3 21V9l3-4 3 4v3h2V5H9V2h2v1h4v3h-2v6h2V9l3-4 3 4v12h-7v-5a2 2 0 0 0-4 0v5H3Zm2-10v3h2v-3H5Zm12 0v3h2v-3h-2Z"/></svg></span>
+                        <span>Остров <span class="text-primary">Мечты</span></span>
+                    </a>
+                    <p class="text-white-50 mb-0">Мир приключений для всей семьи в Москве. Захватывающие аттракционы, сказочные истории и впечатления, которые остаются с вами.</p>
                 </div>
-
-                <div class="col-12 col-md-6 text-md-end">
-                    <a class="text-white text-decoration-none me-3" href="index.html">Главная</a>
-                    <a class="text-white text-decoration-none me-3" href="catalog.html">Аттракционы</a>
-                    <a class="text-white text-decoration-none me-3" href="order.html">Билеты</a>
-                    <a class="text-white text-decoration-none" href="contacts.html">Контакты</a>
+                <div class="col-12 col-sm-5 col-lg-3">
+                    <h2 class="h6 fw-bold mb-3">Разделы</h2>
+                    <nav aria-label="Навигация в подвале">
+                        <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                            <li><a class="link-light" href="index.html">Главная</a></li>
+                            <li><a class="link-light" href="catalog.html">Аттракционы</a></li>
+                            <li><a class="link-light" href="order.html">Билеты</a></li>
+                            <li><a class="link-light" href="index.html#park-story">Легенда парка</a></li>
+                            <li><a class="link-light" href="index.html#faq">Частые вопросы</a></li>
+                            <li><a class="link-light" href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
                 </div>
+                <div class="col-12 col-sm-7 col-lg-4">
+                    <h2 class="h6 fw-bold mb-3">Контакты</h2>
+                    <address class="mb-3">
+                        <p class="text-white-50 mb-2"><span class="me-2" aria-hidden="true">📍</span>г. Москва, проспект Андропова, д. 1</p>
+                        <p class="mb-2"><span class="me-2" aria-hidden="true">📞</span><a class="link-light" href="tel:+74952210000">+7 (495) 221-00-00</a></p>
+                        <p class="mb-0"><span class="me-2" aria-hidden="true">✉️</span><a class="link-light" href="mailto:info@dreamisland.ru">info@dreamisland.ru</a></p>
+                    </address>
+                    <div class="d-flex flex-wrap gap-3 mt-2 mb-4" aria-label="Мессенджеры">
+                        <span class="d-inline-flex align-items-center gap-2 text-white-50" role="link" aria-disabled="true" title="Ссылка скоро появится">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.6 3.3 18.4 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L5.9 13.8 1.1 12.3c-1-.3-1-1 .2-1.5L20 3.6c.9-.4 1.7-.1 1.6-.3Z"/></svg>
+                            Telegram
+                        </span>
+                        <span class="d-inline-flex align-items-center gap-2 text-white-50" role="link" aria-disabled="true" title="Ссылка скоро появится">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="208 208 544 544" aria-hidden="true" focusable="false"><image href="images/max.png" width="960" height="960"/></svg>
+                            MAX
+                        </span>
+                    </div>
+                    <p class="text-white-50 mb-2">Планируете первое путешествие в парк?</p>
+                    <a class="link-light" href="contacts.html#map">Посмотреть на карте и построить маршрут →</a>
+                </div>
+            </div>
+            <div class="border-top border-secondary border-opacity-25 pt-4">
+                <p class="small text-white-50 mb-0">&copy; 2026 «Остров Мечты». Все права защищены.</p>
             </div>
         </div>
     </footer>
@@ -238,5 +256,10 @@
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
+    <script src="js/tickets.js" defer></script>
+    <button type="button" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 p-3 shadow z-3 d-none" aria-label="Наверх" title="Наверх">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 5v14"/></svg>
+    </button>
+    <script src="js/back-to-top.js" defer></script>
 </body>
 </html>

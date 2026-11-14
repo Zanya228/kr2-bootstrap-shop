@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="theme-orange">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Остров Мечты</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container position-relative">
+            <a class="navbar-brand d-inline-flex align-items-center gap-2 fw-bold" href="index.html"><span class="d-inline-flex align-items-center justify-content-center bg-primary rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M3 21V9l3-4 3 4v3h2V5H9V2h2v1h4v3h-2v6h2V9l3-4 3 4v12h-7v-5a2 2 0 0 0-4 0v5H3Zm2-10v3h2v-3H5Zm12 0v3h2v-3h-2Z"/></svg></span><span>Остров <span class="text-primary">Мечты</span></span></a>
 
             <button
                 class="navbar-toggler"
@@ -29,7 +29,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Главная</a>
                     </li>
@@ -66,6 +66,14 @@
             <div class="row g-4">
                 <div class="col-12 col-lg-7">
                     <div class="ratio ratio-16x9 shadow rounded overflow-hidden"><img src="images/pic6.webp" class="object-fit-cover" alt="Аттракцион «Ледяная карусель»"></div>
+                    <table class="table table-bordered align-middle mt-4 mb-0 caption-top">
+                        <caption class="h5 text-body fw-bold pb-2">Параметры аттракциона</caption>
+                        <tbody>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Тип</th><td class="fw-semibold text-end">Семейный</td></tr>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Возраст</th><td class="fw-semibold text-end">От 6 лет</td></tr>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Рост</th><td class="fw-semibold text-end">От 110 см</td></tr>
+                        </tbody>
+                    </table>
                 </div>
 
                 <div class="col-12 col-lg-5">
@@ -73,32 +81,61 @@
                     <h2 class="h4">Об аттракционе</h2>
                         <p>Карусель в ледяном королевстве: сиденья кружатся среди снежных гор и сверкающих сосулек, а морозные спецэффекты создают ощущение настоящей зимы.</p>
                         <p>Отличный выбор для всей семьи — весело, красиво и не слишком страшно.</p>
-                    <ul class="list-group mb-4">
-                            <li class="list-group-item d-flex justify-content-between gap-3"><span class="text-muted">Продолжительность</span><span class="fw-semibold text-end">около 2 минут</span></li>
-                            <li class="list-group-item d-flex justify-content-between gap-3"><span class="text-muted">Тип</span><span class="fw-semibold text-end">вращающаяся карусель</span></li>
-                            <li class="list-group-item d-flex justify-content-between gap-3"><span class="text-muted">Мест</span><span class="fw-semibold text-end">32</span></li>
-                    </ul>
+
+                    <p>Ледяная тема создаёт настроение зимнего приключения даже посреди насыщенного дня в парке. Во время вращения детали вокруг складываются в калейдоскоп, а знакомая карусель ощущается как путешествие в сказочный холодный мир.</p>
+                    <p>Это хороший повод собраться всей семьёй и добавить в маршрут общее впечатление. Обсудите заранее, кто станет самым смелым путешественником, а после поездки выберите следующий мир, который хочется исследовать вместе.</p>
                     <a class="btn btn-primary btn-lg" href="order.html">Купить билет</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-black text-white pt-5 pb-4 mt-5">
         <div class="container">
-            <div class="row align-items-center g-3">
-                <div class="col-12 col-md-6">
-                    <p class="mb-0">
-                        &copy; 2026 Парк развлечений «Остров Мечты». Учебный проект.
-                    </p>
+            <div class="row g-4 gx-lg-5 pb-5">
+                <div class="col-12 col-lg-5">
+                    <a class="d-inline-flex align-items-center gap-2 text-white text-decoration-none fw-bold fs-5 mb-3" href="index.html">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-primary rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M3 21V9l3-4 3 4v3h2V5H9V2h2v1h4v3h-2v6h2V9l3-4 3 4v12h-7v-5a2 2 0 0 0-4 0v5H3Zm2-10v3h2v-3H5Zm12 0v3h2v-3h-2Z"/></svg></span>
+                        <span>Остров <span class="text-primary">Мечты</span></span>
+                    </a>
+                    <p class="text-white-50 mb-0">Мир приключений для всей семьи в Москве. Захватывающие аттракционы, сказочные истории и впечатления, которые остаются с вами.</p>
                 </div>
-
-                <div class="col-12 col-md-6 text-md-end">
-                    <a class="text-white text-decoration-none me-3" href="index.html">Главная</a>
-                    <a class="text-white text-decoration-none me-3" href="catalog.html">Аттракционы</a>
-                    <a class="text-white text-decoration-none me-3" href="order.html">Билеты</a>
-                    <a class="text-white text-decoration-none" href="contacts.html">Контакты</a>
+                <div class="col-12 col-sm-5 col-lg-3">
+                    <h2 class="h6 fw-bold mb-3">Разделы</h2>
+                    <nav aria-label="Навигация в подвале">
+                        <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                            <li><a class="link-light" href="index.html">Главная</a></li>
+                            <li><a class="link-light" href="catalog.html">Аттракционы</a></li>
+                            <li><a class="link-light" href="order.html">Билеты</a></li>
+                            <li><a class="link-light" href="index.html#park-story">Легенда парка</a></li>
+                            <li><a class="link-light" href="index.html#faq">Частые вопросы</a></li>
+                            <li><a class="link-light" href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
                 </div>
+                <div class="col-12 col-sm-7 col-lg-4">
+                    <h2 class="h6 fw-bold mb-3">Контакты</h2>
+                    <address class="mb-3">
+                        <p class="text-white-50 mb-2"><span class="me-2" aria-hidden="true">📍</span>г. Москва, проспект Андропова, д. 1</p>
+                        <p class="mb-2"><span class="me-2" aria-hidden="true">📞</span><a class="link-light" href="tel:+74952210000">+7 (495) 221-00-00</a></p>
+                        <p class="mb-0"><span class="me-2" aria-hidden="true">✉️</span><a class="link-light" href="mailto:info@dreamisland.ru">info@dreamisland.ru</a></p>
+                    </address>
+                    <div class="d-flex flex-wrap gap-3 mt-2 mb-4" aria-label="Мессенджеры">
+                        <span class="d-inline-flex align-items-center gap-2 text-white-50" role="link" aria-disabled="true" title="Ссылка скоро появится">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.6 3.3 18.4 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L5.9 13.8 1.1 12.3c-1-.3-1-1 .2-1.5L20 3.6c.9-.4 1.7-.1 1.6-.3Z"/></svg>
+                            Telegram
+                        </span>
+                        <span class="d-inline-flex align-items-center gap-2 text-white-50" role="link" aria-disabled="true" title="Ссылка скоро появится">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="208 208 544 544" aria-hidden="true" focusable="false"><image href="images/max.png" width="960" height="960"/></svg>
+                            MAX
+                        </span>
+                    </div>
+                    <p class="text-white-50 mb-2">Планируете первое путешествие в парк?</p>
+                    <a class="link-light" href="contacts.html#map">Посмотреть на карте и построить маршрут →</a>
+                </div>
+            </div>
+            <div class="border-top border-secondary border-opacity-25 pt-4">
+                <p class="small text-white-50 mb-0">&copy; 2026 «Остров Мечты». Все права защищены.</p>
             </div>
         </div>
     </footer>
@@ -106,5 +143,9 @@
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
+    <button type="button" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 p-3 shadow z-3 d-none" aria-label="Наверх" title="Наверх">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 5v14"/></svg>
+    </button>
+    <script src="js/back-to-top.js" defer></script>
 </body>
 </html>

@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="theme-orange">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Остров Мечты</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container position-relative">
+            <a class="navbar-brand d-inline-flex align-items-center gap-2 fw-bold" href="index.html"><span class="d-inline-flex align-items-center justify-content-center bg-primary rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M3 21V9l3-4 3 4v3h2V5H9V2h2v1h4v3h-2v6h2V9l3-4 3 4v12h-7v-5a2 2 0 0 0-4 0v5H3Zm2-10v3h2v-3H5Zm12 0v3h2v-3h-2Z"/></svg></span><span>Остров <span class="text-primary">Мечты</span></span></a>
 
             <button
                 class="navbar-toggler"
@@ -29,7 +29,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
                     </li>
@@ -48,95 +48,115 @@
     </nav>
 
     <main>
-        <section id="about" class="bg-light border-bottom">
+        <section id="about" class="park-hero d-flex align-items-center text-white" aria-labelledby="hero-title">
             <div class="container py-5">
-                <div class="row align-items-center g-4">
-                    <div class="col-12 col-lg-6">
-                        <h2 class="display-5 fw-bold">Добро пожаловать в «Остров Мечты»</h2>
-                        <p class="lead text-primary fw-semibold">
-                            Наша миссия — создавать яркие впечатления и незабываемые воспоминания, в которые хочется вернуться.
-                        </p>
-                        <p>
-                            «Остров Мечты» — локация для развлечений и отдыха, одна из знаковых достопримечательностей Москвы, расположенная в Нагатинской пойме, буквально в 10 минутах езды от центра столицы.
-                            Здесь есть все для того, чтобы вы могли вырваться из повседневной суеты и погрузиться в уникальную атмосферу волшебства и приключений!
-                        </p>
-                        <p>
-                            Наш развлекательный кластер занимает пространство в 100 га, что сопоставимо с площадью 140 футбольных полей. Для вас работают 16 развлекательных объектов — приходите с семьей или друзьями и будьте уверены, что каждый найдет себе занятие по душе.
-                        </p>
-                        <a class="btn btn-primary btn-lg me-2 mb-2" href="#attractions">Смотреть аттракционы</a>
-                        <a class="btn btn-outline-primary btn-lg mb-2" href="#map">Как добраться</a>
-                    </div>
-
-                    <div class="col-12 col-lg-6">
-                        <img
-                            src="images/pic1.jpg"
-                            class="img-fluid rounded shadow"
-                            alt="Общий вид парка развлечений «Остров Мечты» с колесом обозрения"
-                        >
-                        <div class="row text-center mt-4 g-3">
-                            <div class="col-4">
-                                <div class="p-3 bg-white border rounded h-100">
-                                    <p class="h4 fw-bold text-primary mb-0">60+</p>
-                                    <p class="small text-muted mb-0">аттракционов</p>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="p-3 bg-white border rounded h-100">
-                                    <p class="h4 fw-bold text-primary mb-0">15</p>
-                                    <p class="small text-muted mb-0">тематических зон</p>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="p-3 bg-white border rounded h-100">
-                                    <p class="h4 fw-bold text-primary mb-0">12 ч</p>
-                                    <p class="small text-muted mb-0">работы в день</p>
-                                </div>
-                            </div>
+                <div class="row">
+                    <div class="col-12 col-lg-10 col-xl-9">
+                        <span class="badge rounded-pill border border-primary bg-dark px-3 py-2 mb-4">Парк развлечений · Москва</span>
+                        <h1 id="hero-title" class="display-3 fw-bold mb-3">Место, где <span class="text-primary">мечты оживают</span>, а приключения становятся реальностью</h1>
+                        <p class="lead text-white-50 mb-4">«Остров Мечты» — целый мир впечатлений для всей семьи. Захватывающие аттракционы, сказочные миры и моменты, которые хочется пережить снова. Ваше приключение начинается здесь.</p>
+                        <div class="d-flex flex-wrap gap-2">
+                            <a class="btn btn-primary btn-lg px-4" href="order.html">Запланировать визит</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="catalog.html">Все аттракционы</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="contacts.html#map">Как добраться</a>
                         </div>
                     </div>
+                </div>
+                <div class="row row-cols-2 row-cols-lg-4 g-4 mt-5 pt-lg-4">
+                    <div class="col"><p class="display-5 fw-bold text-primary mb-0">60+</p><p class="text-white-50 mb-0">аттракционов</p></div>
+                    <div class="col"><p class="display-5 fw-bold text-primary mb-0">15</p><p class="text-white-50 mb-0">тематических зон</p></div>
+                    <div class="col"><p class="display-5 fw-bold text-primary mb-0">100 га</p><p class="text-white-50 mb-0">пространства для отдыха</p></div>
+                    <div class="col"><p class="display-5 fw-bold text-primary mb-0">Вместе</p><p class="text-white-50 mb-0">ярче каждое приключение</p></div>
                 </div>
             </div>
         </section>
 
+        <section id="park-life" class="container my-5" aria-labelledby="park-life-title">
+            <div class="row g-4 align-items-start">
+                <div class="col-12 col-lg-5">
+                    <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/></svg></span><h2 id="park-life-title" class="mb-0 fw-bold">Целый день маленьких открытий</h2></div>
+                    <p class="lead text-primary">Здесь у каждого приключения свой темп.</p>
+                    <p>Для кого-то идеальный день начинается с головокружительного полёта, для кого-то — с неспешной прогулки и семейной фотографии. В «Острове Мечты» можно составить собственный маршрут: познакомиться с тематическими мирами, выбрать любимые аттракционы и оставить время для неожиданных открытий.</p>
+                    <p class="mb-0">Приезжайте с друзьями, устройте семейный выходной или посвятите день впечатлениям вдвоём. Самое ценное в такой поездке — общие воспоминания: первый смелый шаг, заразительный смех и история, которую потом хочется рассказывать снова.</p>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6"><article class="card h-100 border-0 bg-light"><div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m13 2-9 12h7l-1 8 10-13h-7l1-7Z"/></svg></span><h3 class="mb-0 h5">Для любителей скорости</h3></div>
+                            <p class="mb-0">Начните знакомство с каталогом: полёт в тоннеле, «Молот судьбы» и «Красная башня» зададут настроение вашему приключению. Перед поездкой сравните описания и выберите, какое испытание станет первым.</p>
+                        </div></article></div>
+                        <div class="col-12 col-md-6"><article class="card h-100 border-0 bg-light"><div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span><h3 class="mb-0 h5">Для семейных воспоминаний</h3></div>
+                            <p class="mb-0">Выбирайте развлечения вместе с детьми и чередуйте активные впечатления с паузами. Учитывайте ограничения по росту и возрасту, чтобы маршрут подходил каждому участнику вашей компании.</p>
+                        </div></article></div>
+                        <div class="col-12"><article class="card border-0 bg-light"><div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="5" cy="5" r="3"/><circle cx="19" cy="19" r="3"/><path d="M8 5h8a4 4 0 0 1 0 8H8a3 3 0 0 0 0 6h8"/></svg></span><h3 class="mb-0 h5">Ваш маршрут без спешки</h3></div>
+                            <p>Наметьте несколько аттракционов, которые особенно хочется посетить, а между ними оставьте время на прогулку, фотографии и отдых. Не обязательно успеть всё за один день: любимое место приятно открыть заново.</p>
+                            <a class="btn btn-outline-primary" href="catalog.html">Выбрать своё приключение</a>
+                        </div></article></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="park-story" class="bg-light border-top border-bottom" aria-labelledby="park-story-title">
+            <div class="container py-5">
+                <div class="row g-4 gx-lg-5">
+                    <div class="col-12 col-lg-4">
+                        <span class="badge text-bg-primary mb-3">Легенда парка</span>
+                        <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></svg></span><h2 id="park-story-title" class="mb-0 fw-bold">Как появился остров, которого не было на картах</h2></div>
+                        <p class="text-body-secondary mb-0">Вымышленная история о мечте, смелости и приключениях, которые начинаются с простого «а что, если?».</p>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/></svg></span><h3 class="mb-0 h5">Карта из детского альбома</h3></div>
+                        <p>По нашей легенде, всё началось с девочки Миры, которая любила рисовать несуществующие страны. Однажды на пустом листе она изобразила остров: с башней до облаков, поездом сквозь горы и городом, где никто не забывает удивляться. Внизу Мира подписала: «Место, где взрослые снова умеют мечтать».</p>
+                        <div class="d-flex align-items-center gap-3 mb-3 mt-4"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m4 20 12-12 4 4L8 24M14 10l4 4M5 2v6M2 5h6M19 1v4M17 3h4" transform="translate(0 -2)"/></svg></span><h3 class="mb-0 h5">Мастерская невозможного</h3></div>
+                        <p>Рисунок нашёл старый мастер Лев, хранитель необычных идей. Вместе с друзьями он открыл мастерскую: ветер учились превращать в ощущение полёта, стук колёс — в начало путешествия, а обычные улицы — в дороги к новым мирам. Но остров никак не появлялся: на карте оставалось одно белое пятно.</p>
+                        <div class="d-flex align-items-center gap-3 mb-3 mt-4"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></svg></span><h3 class="mb-0 h5">Первый шаг навстречу мечте</h3></div>
+                        <p>Тогда Мира поняла, что на рисунке не хватает гостей. Она позвала соседей, друзей и всех, кто хоть раз откладывал приключение на потом. Стоило первым путешественникам взяться за руки и шагнуть вперёд, как белое пятно заполнилось светом. У острова появились голоса, смех и собственное имя — «Остров Мечты».</p>
+                        <p class="mb-0">С тех пор в нашей сказке остров растёт с каждой новой мечтой. Кто-то оставляет здесь страх высоты, кто-то находит повод провести день с близкими, а кто-то увозит идею для следующего путешествия. И у этой истории нет последней страницы: её продолжают гости.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="attractions" class="container my-5">
             <h2 class="text-center mb-4">Популярные аттракционы</h2>
 
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="ratio ratio-16x9"><img src="images/pic2.webp" class="card-img-top object-fit-cover" alt="Полёт в тоннеле с мёртвыми петлями"></div>
+                        <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic2.webp" class="card-img-top object-fit-cover" alt="Полёт в тоннеле с мёртвыми петлями"></div>
                         <div class="card-body">
                             <h3 class="h5 card-title">Полёт в тоннеле</h3>
                             <p class="card-text text-muted">
                                 Сумасшедший полёт на скоростном поезде по подземным линиям Нью-Йорка. Успеете ли вы скрыться от злодеев?
                             </p>
-                            <a class="btn btn-outline-primary" href="attraction-tunnel.html">Подробнее</a>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#attraction-modal-tunnel">Подробнее</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="ratio ratio-16x9"><img src="images/pic3.webp" class="card-img-top object-fit-cover" alt="Молот судьбы"></div>
+                        <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic3.webp" class="card-img-top object-fit-cover" alt="Молот судьбы"></div>
                         <div class="card-body">
                             <h3 class="h5 card-title">Молот судьбы</h3>
                             <p class="card-text text-muted">
                                 Подъем на 240 градусов – бешеная скорость и гарантированный прилив адреналина!
                             </p>
-                            <a class="btn btn-outline-primary" href="attraction-hammer.html">Подробнее</a>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#attraction-modal-hammer">Подробнее</button>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="ratio ratio-16x9"><img src="images/pic4.webp" class="card-img-top object-fit-cover" alt="Красная башня"></div>
+                        <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic4.webp" class="card-img-top object-fit-cover" alt="Красная башня"></div>
                         <div class="card-body">
                             <h3 class="h5 card-title">Красная башня</h3>
                             <p class="card-text text-muted">
                                 Захватывающий полет под стеклянным куполом «Острова Мечты»!
                             </p>
-                            <a class="btn btn-outline-primary" href="attraction-tower.html">Подробнее</a>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#attraction-modal-tower">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -146,47 +166,7 @@
             </div>
         </section>
 
-        <section id="map" class="bg-light border-top border-bottom">
-            <div class="container py-5">
-                <h2 class="text-center mb-4">Расположение на карте</h2>
-
-                <div class="row g-4">
-                    <div class="col-12 col-lg-4">
-                        <h3 class="h5">Адрес</h3>
-                        <p>г. Москва, проспект Андропова, д. 1 (Нагатинская пойма)</p>
-
-                        <h3 class="h5">Как добраться</h3>
-                        <ul class="list-unstyled">
-                            <li class="mb-2">
-                                <span class="badge bg-primary me-1">Метро</span>
-                                «Технопарк» (Замоскворецкая линия), около 5 минут пешком до входа.
-                            </li>
-                            <li class="mb-2">
-                                <span class="badge bg-primary me-1">Автобус</span>
-                                Наземный транспорт до остановки «Метро Технопарк».
-                            </li>
-                            <li class="mb-2">
-                                <span class="badge bg-primary me-1">Автомобиль</span>
-                                По проспекту Андропова, съезд к «Острову Мечты». У комплекса есть парковка.
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-12 col-lg-8">
-                        <div class="ratio ratio-16x9 border rounded overflow-hidden">
-                            <iframe
-                                src="https://yandex.ru/map-widget/v1/?text=Остров%20Мечты%2C%20проспект%20Андропова%2C%201%2C%20Москва&amp;z=15"
-                                title="Карта: расположение парка развлечений «Остров Мечты»"
-                                loading="lazy"
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="container my-5">
+<section id="faq" class="container my-5">
             <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
 
             <div class="row justify-content-center">
@@ -275,21 +255,172 @@
         </section>
     </main>
 
-    <footer class="bg-dark text-white py-4 mt-5">
-        <div class="container">
-            <div class="row align-items-center g-3">
-                <div class="col-12 col-md-6">
-                    <p class="mb-0">
-                        &copy; 2026 Парк развлечений «Остров Мечты». Учебный проект.
-                    </p>
+<div class="modal fade" id="attraction-modal-tunnel" tabindex="-1" aria-labelledby="attraction-title-tunnel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-4" id="attraction-title-tunnel">Полёт в тоннеле</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead text-primary fw-semibold mb-4">Сумасшедший полёт на скоростном поезде по подземным линиям Нью-Йорка. Успеете ли вы скрыться от злодеев?</p>
+                    <div class="row g-4">
+                <div class="col-12 col-lg-7">
+                    <div class="ratio ratio-16x9 shadow rounded overflow-hidden"><img src="images/pic2.webp" class="object-fit-cover" alt="Поезд аттракциона «Полёт в тоннеле»"></div>
+                    <table class="table table-bordered align-middle mt-4 mb-0 caption-top">
+                        <caption class="h5 text-body fw-bold pb-2">Параметры аттракциона</caption>
+                        <tbody>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Тип</th><td class="fw-semibold text-end">Экстремальный</td></tr>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Возраст</th><td class="fw-semibold text-end">От 10 лет</td></tr>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Рост</th><td class="fw-semibold text-end">От 120 см</td></tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <div class="col-12 col-md-6 text-md-end">
-                    <a class="text-white text-decoration-none me-3" href="#about">О парке</a>
-                    <a class="text-white text-decoration-none me-3" href="#attractions">Аттракционы</a>
-                    <a class="text-white text-decoration-none me-3" href="#map">Карта</a>
-                    <a class="text-white text-decoration-none" href="#faq">FAQ</a>
+                <div class="col-12 col-lg-5">
+                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 10 лет</span><span class="badge text-bg-light border mb-2">рост от 120 см</span></div>
+                    <h3 class="h4">Об аттракционе</h3>
+                        <p>Вы побываете в убежище Черепашек-ниндзя и поможете им сконструировать скоростной поезд. Вот только детали для него пришлось украсть у злодея Шреддера… Теперь он устроил погоню!</p>
+                        <p>Вас ждёт ошеломительная поездка на скорости 80 км/ч в полной темноте. Путешествие будет сопровождаться медиа и световыми эффектами, петлями, неожиданными переворотами и подъемами на высоту 24 метров!</p>
+
+                    <p>В этой поездке зритель становится участником погони: темнота скрывает следующий поворот, а световые образы помогают почувствовать себя внутри приключенческого фильма. Здесь особенно ярко ощущается контраст между ожиданием и стремительным движением.</p>
+                    <p>Выбирайте «Полёт в тоннеле», если вам нравятся истории с неожиданной развязкой и хочется разделить острые ощущения с друзьями. После финиша будет интересно сравнить впечатления: каждый запоминает свой самый захватывающий момент.</p>
+
                 </div>
+            </div>
+                </div>
+                <div class="modal-footer justify-content-end">
+                    <a class="btn btn-primary btn-lg" href="order.html">Купить билет</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="attraction-modal-hammer" tabindex="-1" aria-labelledby="attraction-title-hammer" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-4" id="attraction-title-hammer">Молот судьбы</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead text-primary fw-semibold mb-4">Подъём на 240 градусов — бешеная скорость и гарантированный прилив адреналина!</p>
+                    <div class="row g-4">
+                <div class="col-12 col-lg-7">
+                    <div class="ratio ratio-16x9 shadow rounded overflow-hidden"><img src="images/pic3.webp" class="object-fit-cover" alt="Аттракцион «Молот судьбы»"></div>
+                    <table class="table table-bordered align-middle mt-4 mb-0 caption-top">
+                        <caption class="h5 text-body fw-bold pb-2">Параметры аттракциона</caption>
+                        <tbody>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Тип</th><td class="fw-semibold text-end">Экстремальный</td></tr>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Возраст</th><td class="fw-semibold text-end">От 12 лет</td></tr>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Рост</th><td class="fw-semibold text-end">От 130 см</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 12 лет</span><span class="badge text-bg-light border mb-2">рост от 130 см</span></div>
+                    <h3 class="h4">Об аттракционе</h3>
+                        <p>Коварный Бакстер Стокман создал чудовищную машину для разрушения целого города! Вам предстоит опробовать зловещее изобретение на себе и прокатиться на огромном молоте-диске с вращающимися лезвиями.</p>
+                        <p>Словно раскачиваясь на огромных качелях высотой с пятиэтажный дом, вы будете совершать головокружительные пролёты на 120 градусов. Аттракцион «Молот судьбы» – это испытание, которое смогут пройти только настоящие герои!</p>
+
+                    <p>«Молот судьбы» превращает привычное ощущение пространства в настоящее испытание для смельчаков. Когда движение набирает размах, декорации вокруг словно меняются местами, а внимание целиком переключается на полёт и собственные эмоции.</p>
+                    <p>Этот аттракцион подойдёт для яркой кульминации дня в парке. Соберите компанию любителей экстрима и решите, кто первым отважится испытать себя. А тем, кто предпочитает наблюдать, будет не менее интересно встретить друзей после поездки и услышать их рассказы.</p>
+
+                </div>
+            </div>
+                </div>
+                <div class="modal-footer justify-content-end">
+                    <a class="btn btn-primary btn-lg" href="order.html">Купить билет</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="modal fade" id="attraction-modal-tower" tabindex="-1" aria-labelledby="attraction-title-tower" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-4" id="attraction-title-tower">Красная башня</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead text-primary fw-semibold mb-4">Захватывающий полёт под стеклянным куполом «Острова Мечты»!</p>
+                    <div class="row g-4">
+                <div class="col-12 col-lg-7">
+                    <div class="ratio ratio-16x9 shadow rounded overflow-hidden"><img src="images/pic4.webp" class="object-fit-cover" alt="Аттракцион «Красная башня»"></div>
+                    <table class="table table-bordered align-middle mt-4 mb-0 caption-top">
+                        <caption class="h5 text-body fw-bold pb-2">Параметры аттракциона</caption>
+                        <tbody>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Тип</th><td class="fw-semibold text-end">Экстремальный</td></tr>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Возраст</th><td class="fw-semibold text-end">От 10 лет</td></tr>
+                            <tr><th scope="row" class="fw-normal text-body-secondary">Рост</th><td class="fw-semibold text-end">От 120 см</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 10 лет</span><span class="badge text-bg-light border mb-2">рост от 120 см</span></div>
+                    <h3 class="h4">Об аттракционе</h3>
+                        <p>32-метровая алая башня притягивает восхищенные взгляды искателей приключений, словно магнит. На этом аттракционе вы подниметесь выше облаков и насладитесь живописной панорамой парка развлечений.</p>
+                        <p>Почувствуйте, что время замирает, пока вы плавно летите под большим стеклянным куполом, поднимаясь и опускаясь в свете праздничных огоньков. Оборот за оборотом радиус вращения будет увеличиваться, а вместе с ним и восторг посетителей. Всплеск адреналина, эйфория от полета, окрыляющее ощущение невесомости — вы точно захотите испытать эти эмоции снова.</p>
+
+                    <p>Ожидание перед полётом здесь становится частью приключения. С высоты знакомые детали парка выглядят иначе, а возможность на мгновение отвлечься от повседневной суеты делает впечатление особенно запоминающимся.</p>
+                    <p>«Красная башня» понравится тем, кто ищет острые ощущения и любит проверять собственную смелость. Включите её в маршрут между прогулками по тематическим зонам: такой контраст поможет почувствовать, насколько разным может быть один день на «Острове Мечты».</p>
+
+                </div>
+            </div>
+                </div>
+                <div class="modal-footer justify-content-end">
+                    <a class="btn btn-primary btn-lg" href="order.html">Купить билет</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-black text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4 gx-lg-5 pb-5">
+                <div class="col-12 col-lg-5">
+                    <a class="d-inline-flex align-items-center gap-2 text-white text-decoration-none fw-bold fs-5 mb-3" href="index.html">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-primary rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M3 21V9l3-4 3 4v3h2V5H9V2h2v1h4v3h-2v6h2V9l3-4 3 4v12h-7v-5a2 2 0 0 0-4 0v5H3Zm2-10v3h2v-3H5Zm12 0v3h2v-3h-2Z"/></svg></span>
+                        <span>Остров <span class="text-primary">Мечты</span></span>
+                    </a>
+                    <p class="text-white-50 mb-0">Мир приключений для всей семьи в Москве. Захватывающие аттракционы, сказочные истории и впечатления, которые остаются с вами.</p>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3">
+                    <h2 class="h6 fw-bold mb-3">Разделы</h2>
+                    <nav aria-label="Навигация в подвале">
+                        <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                            <li><a class="link-light" href="index.html">Главная</a></li>
+                            <li><a class="link-light" href="catalog.html">Аттракционы</a></li>
+                            <li><a class="link-light" href="order.html">Билеты</a></li>
+                            <li><a class="link-light" href="index.html#park-story">Легенда парка</a></li>
+                            <li><a class="link-light" href="index.html#faq">Частые вопросы</a></li>
+                            <li><a class="link-light" href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-sm-7 col-lg-4">
+                    <h2 class="h6 fw-bold mb-3">Контакты</h2>
+                    <address class="mb-3">
+                        <p class="text-white-50 mb-2"><span class="me-2" aria-hidden="true">📍</span>г. Москва, проспект Андропова, д. 1</p>
+                        <p class="mb-2"><span class="me-2" aria-hidden="true">📞</span><a class="link-light" href="tel:+74952210000">+7 (495) 221-00-00</a></p>
+                        <p class="mb-0"><span class="me-2" aria-hidden="true">✉️</span><a class="link-light" href="mailto:info@dreamisland.ru">info@dreamisland.ru</a></p>
+                    </address>
+                    <div class="d-flex flex-wrap gap-3 mt-2 mb-4" aria-label="Мессенджеры">
+                        <span class="d-inline-flex align-items-center gap-2 text-white-50" role="link" aria-disabled="true" title="Ссылка скоро появится">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.6 3.3 18.4 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L5.9 13.8 1.1 12.3c-1-.3-1-1 .2-1.5L20 3.6c.9-.4 1.7-.1 1.6-.3Z"/></svg>
+                            Telegram
+                        </span>
+                        <span class="d-inline-flex align-items-center gap-2 text-white-50" role="link" aria-disabled="true" title="Ссылка скоро появится">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="208 208 544 544" aria-hidden="true" focusable="false"><image href="images/max.png" width="960" height="960"/></svg>
+                            MAX
+                        </span>
+                    </div>
+                    <p class="text-white-50 mb-2">Планируете первое путешествие в парк?</p>
+                    <a class="link-light" href="contacts.html#map">Посмотреть на карте и построить маршрут →</a>
+                </div>
+            </div>
+            <div class="border-top border-secondary border-opacity-25 pt-4">
+                <p class="small text-white-50 mb-0">&copy; 2026 «Остров Мечты». Все права защищены.</p>
             </div>
         </div>
     </footer>
@@ -297,5 +428,9 @@
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
+    <button type="button" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 p-3 shadow z-3 d-none" aria-label="Наверх" title="Наверх">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 5v14"/></svg>
+    </button>
+    <script src="js/back-to-top.js" defer></script>
 </body>
 </html>
