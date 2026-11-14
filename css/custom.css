@@ -34,3 +34,108 @@
   transition: none !important;
   animation: none !important;
 }
+
+/* Keep anchor targets below the sticky navbar. */
+:root {
+  scroll-padding-top: 5rem;
+}
+
+/* Center links relative to the entire navbar on desktop. */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Full-width photo hero; layout and typography use Bootstrap utilities. */
+.park-hero {
+  min-height: calc(100svh - 56px);
+  background: linear-gradient(90deg, rgba(0, 0, 0, .88), rgba(0, 0, 0, .45)),
+    url("../images/pic1.jpg") center / cover no-repeat;
+}
+
+/* Scoped motion: Bootstrap handles the FAQ collapse animation. */
+@media (prefers-reduced-motion: no-preference) {
+  #attractions .card,
+  [data-attraction] .card,
+  [data-ticket] {
+    transition: transform .25s ease, box-shadow .25s ease !important;
+  }
+
+  #attractions .card-img-top,
+  [data-attraction] .card-img-top {
+    transition: transform .4s ease !important;
+  }
+
+  #attractions .card:focus-within,
+  [data-attraction] .card:focus-within,
+  [data-ticket]:focus-within {
+    transform: translateY(-6px);
+    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
+  }
+
+  #attractions .card:focus-within .card-img-top,
+  [data-attraction] .card:focus-within .card-img-top {
+    transform: scale(1.05);
+  }
+
+  #faq .collapsing {
+    transition: height .35s ease !important;
+  }
+
+  #faq .accordion-button {
+    transition: var(--bs-accordion-transition) !important;
+  }
+
+  #faq .accordion-button::after {
+    transition: var(--bs-accordion-btn-icon-transition) !important;
+  }
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  #attractions .card:hover,
+  [data-attraction] .card:hover,
+  [data-ticket]:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
+  }
+
+  #attractions .card:hover .card-img-top,
+  [data-attraction] .card:hover .card-img-top {
+    transform: scale(1.05);
+  }
+}
+
+/* Restore Bootstrap modal transitions within the global motion override. */
+@media (prefers-reduced-motion: no-preference) {
+  .modal.fade,
+  .modal-backdrop.fade {
+    transition: opacity .15s linear !important;
+  }
+
+  .modal.fade .modal-dialog {
+    transition: transform .3s ease-out !important;
+  }
+}
+
+.ticket-calendar {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: .3rem;
+}
+
+.ticket-calendar .ticket-day {
+  min-height: 3.5rem;
+  padding: .25rem .1rem;
+  font-size: .75rem;
+}
+
+@media (min-width: 992px) {
+  #attraction-filters {
+    top: 5rem;
+    max-height: calc(100dvh - 6rem);
+    overflow-y: auto;
+  }
+}
