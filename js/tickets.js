@@ -14,7 +14,7 @@
   ];
   const standardPrice = date => [3100, 2800, 3000, 3000, 3000, 2800, 3300][date.getDay()];
   const price = ticket => ({ standard: standardPrice(selected), express: 9000, family3: 9400, family4: 11800 })[ticket.id];
-  const dateLabel = () => selected.toLocaleDateString('ru-RU') + ' · 12:00 – 22:00';
+  const dateLabel = () => selected.toLocaleDateString('ru-RU');
   const total = () => tickets.reduce((sum, ticket) => sum + price(ticket) * ticket.count, 0);
   const fillList = target => {
     target.replaceChildren();

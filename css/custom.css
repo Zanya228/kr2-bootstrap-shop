@@ -56,11 +56,78 @@
     url("../images/pic1.jpg") center / cover no-repeat;
 }
 
+/* A compact home layout keeps related content together. */
+.home-page .park-hero > .container {
+  padding-block: clamp(2rem, 4vw, 3.5rem) !important;
+}
+
+.home-page main > .container {
+  margin-block: 2rem !important;
+}
+
+.home-page #park-story > .container {
+  padding-block: 2rem !important;
+}
+
+.home-page .park-stats > .col {
+  border-left: 2px solid var(--bs-primary);
+  padding-left: 1rem;
+}
+
+.home-page .story-chapters {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.home-page .story-chapter > .d-flex {
+  margin-top: 0 !important;
+}
+
+.home-page .story-chapter > p:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .home-page .story-chapters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@keyframes park-stat-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-page .park-stats > .col {
+    animation: park-stat-reveal .65s ease-out both !important;
+  }
+
+  .home-page .park-stats > .col:nth-child(2) {
+    animation-delay: .15s !important;
+  }
+
+  .home-page .park-stats > .col:nth-child(3) {
+    animation-delay: .3s !important;
+  }
+
+  .home-page .park-stats > .col:nth-child(4) {
+    animation-delay: .45s !important;
+  }
+}
+
 /* Scoped motion: Bootstrap handles the FAQ collapse animation. */
 @media (prefers-reduced-motion: no-preference) {
   #attractions .card,
   [data-attraction] .card,
-  [data-ticket] {
+  [data-ticket],
+  #park-life .card {
     transition: transform .25s ease, box-shadow .25s ease !important;
   }
 
@@ -71,7 +138,8 @@
 
   #attractions .card:focus-within,
   [data-attraction] .card:focus-within,
-  [data-ticket]:focus-within {
+  [data-ticket]:focus-within,
+  #park-life .card:focus-within {
     transform: translateY(-6px);
     box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
   }
@@ -97,7 +165,8 @@
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
   #attractions .card:hover,
   [data-attraction] .card:hover,
-  [data-ticket]:hover {
+  [data-ticket]:hover,
+  #park-life .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
   }
@@ -132,10 +201,37 @@
   font-size: .75rem;
 }
 
-@media (min-width: 992px) {
-  #attraction-filters {
+@media (min-width: 1200px) {
+  #booking-summary {
     top: 5rem;
     max-height: calc(100dvh - 6rem);
     overflow-y: auto;
   }
+}
+
+.theme-orange .accordion {
+  --bs-accordion-active-bg: var(--bs-secondary-bg);
+  --bs-accordion-active-color: var(--bs-body-color);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .25);
+}
+
+.theme-orange .form-control:focus,
+.theme-orange .form-select:focus {
+  border-color: #adb5bd;
+  box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .25);
+}
+
+.theme-orange .form-check-input:checked {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+
+.theme-orange .form-check-input:focus {
+  border-color: #adb5bd;
+  box-shadow: 0 0 0 .25rem rgba(108, 117, 125, .25);
+}
+
+.theme-orange [data-quantity] {
+  --bs-btn-disabled-color: var(--bs-secondary);
+  --bs-btn-disabled-border-color: var(--bs-secondary);
 }

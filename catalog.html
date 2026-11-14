@@ -61,166 +61,146 @@
             </div>
         </section>
 
-        <section class="container my-5">
+        <section class="container mt-3 mb-5">
             <div class="row g-4">
-            <aside class="col-12 col-lg-3">
-            <form id="attraction-filters" class="card shadow-sm sticky-lg-top z-1" aria-label="Фильтр аттракционов">
-                <div class="card-header bg-white">
-                    <h2 class="h5 mb-0">Фильтры</h2>
-                </div>
-                <div class="card-body">
-                    <div class="row g-4">
-                    <div class="col-12">
-                        <p class="fw-semibold mb-2">Возраст гостя</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <input type="radio" class="btn-check" name="age" id="age-all" value="all" checked>
-                            <label class="btn btn-outline-primary btn-sm" for="age-all">Все</label>
-                            <input type="radio" class="btn-check" name="age" id="age-3" value="3">
-                            <label class="btn btn-outline-primary btn-sm" for="age-3">3–5 лет</label>
-                            <input type="radio" class="btn-check" name="age" id="age-6" value="6">
-                            <label class="btn btn-outline-primary btn-sm" for="age-6">6–9 лет</label>
-                            <input type="radio" class="btn-check" name="age" id="age-10" value="10">
-                            <label class="btn btn-outline-primary btn-sm" for="age-10">10–11 лет</label>
-                            <input type="radio" class="btn-check" name="age" id="age-12" value="12">
-                            <label class="btn btn-outline-primary btn-sm" for="age-12">12 лет и старше</label>
-                        </div>
+            <aside id="catalog-filters-panel" class="col-12">
+            <form id="attraction-filters" class="bg-light border border-primary rounded-4 shadow-sm p-3 p-lg-4" aria-label="Фильтр аттракционов">
+                <div class="d-flex flex-wrap align-items-center gap-2 mb-3"><h2 class="h5 fw-bold mb-0">Найдите своё приключение</h2><span class="text-body-secondary small">Выберите возраст, рост и любимый формат отдыха</span></div>
+                <div class="row g-3 align-items-end">
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <label class="form-label fw-semibold" for="filter-age">Возраст гостя</label>
+                        <select class="form-select" name="age" id="filter-age">
+                            <option value="all" selected>Любой возраст</option>
+                            <option value="3">3–5 лет</option>
+                            <option value="6">6–9 лет</option>
+                            <option value="10">10–11 лет</option>
+                            <option value="12">12 лет и старше</option>
+                        </select>
                     </div>
-                    <div class="col-12">
-                        <p class="fw-semibold mb-2">Рост гостя</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <input type="radio" class="btn-check" name="height" id="height-all" value="all" checked>
-                            <label class="btn btn-outline-primary btn-sm" for="height-all">Все</label>
-                            <input type="radio" class="btn-check" name="height" id="height-90" value="90">
-                            <label class="btn btn-outline-primary btn-sm" for="height-90">90–109 см</label>
-                            <input type="radio" class="btn-check" name="height" id="height-110" value="110">
-                            <label class="btn btn-outline-primary btn-sm" for="height-110">110–119 см</label>
-                            <input type="radio" class="btn-check" name="height" id="height-120" value="120">
-                            <label class="btn btn-outline-primary btn-sm" for="height-120">120–129 см</label>
-                            <input type="radio" class="btn-check" name="height" id="height-130" value="130">
-                            <label class="btn btn-outline-primary btn-sm" for="height-130">130–139 см</label>
-                            <input type="radio" class="btn-check" name="height" id="height-140" value="140"><label class="btn btn-outline-primary btn-sm" for="height-140">от 140 см</label>
-                        </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <label class="form-label fw-semibold" for="filter-height">Рост гостя</label>
+                        <select class="form-select" name="height" id="filter-height">
+                            <option value="all" selected>Любой рост</option>
+                            <option value="90">90–109 см</option>
+                            <option value="110">110–119 см</option>
+                            <option value="120">120–129 см</option>
+                            <option value="130">130–139 см</option>
+                            <option value="140">От 140 см</option>
+                        </select>
                     </div>
-                    <div class="col-12">
-                        <p class="fw-semibold mb-2">Категория</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <input type="radio" class="btn-check" name="cat" id="cat-all" value="all" checked>
-                            <label class="btn btn-outline-primary btn-sm" for="cat-all">Все</label>
-                            <input type="radio" class="btn-check" name="cat" id="cat-extreme" value="extreme">
-                            <label class="btn btn-outline-primary btn-sm" for="cat-extreme">Экстрим</label>
-                            <input type="radio" class="btn-check" name="cat" id="cat-family" value="family">
-                            <label class="btn btn-outline-primary btn-sm" for="cat-family">Семейные</label>
-                            <input type="radio" class="btn-check" name="cat" id="cat-kids" value="kids">
-                            <label class="btn btn-outline-primary btn-sm" for="cat-kids">Детские</label>
-                            <input type="radio" class="btn-check" name="cat" id="cat-show" value="show">
-                            <label class="btn btn-outline-primary btn-sm" for="cat-show">Шоу и квесты</label>
-                        </div>
+                    <div class="col-12 col-md-4 col-lg-3">
+                        <label class="form-label fw-semibold" for="filter-category">Категория</label>
+                        <select class="form-select" name="cat" id="filter-category">
+                            <option value="all" selected>Все категории</option>
+                            <option value="extreme">Экстрим</option>
+                            <option value="family">Семейные</option>
+                            <option value="kids">Детские</option>
+                        </select>
                     </div>
-                    </div>
-                    <div class="d-grid gap-3 mt-4">
-                        <button type="reset" class="btn btn-primary">Сбросить фильтры</button>
+                    <div class="col-12 col-lg-3">
+                        <button type="reset" class="btn btn-outline-primary w-100">Сбросить фильтры</button>
                     </div>
                 </div>
             </form>
             </aside>
 
-            <div class="col-12 col-lg-9">
+            <div class="col-12">
             <p id="filter-summary" class="text-body-secondary mb-3" role="status" aria-live="polite" aria-atomic="true">Показано 9 из 9 аттракционов</p><div id="filter-empty" class="alert alert-light border d-none">Подходящих аттракционов нет. Попробуйте изменить параметры или сбросить фильтры.</div>
             <div class="row g-4">
-                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="extreme" data-min-age="10" data-min-height="120">
+                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="extreme" data-min-age="10" data-min-height="120">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic2.webp" class="card-img-top object-fit-cover" alt="Полёт в тоннеле"></div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column p-4">
                             <div><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 10 лет</span><span class="badge text-bg-light border mb-2">рост от 120 см</span></div>
-                            <h3 class="h5 card-title">Полёт в тоннеле</h3>
-                            <p class="card-text text-muted">Сумасшедший полёт на скоростном поезде по подземным линиям Нью-Йорка. Успеете ли вы скрыться от злодеев?</p>
+                            <h3 class="h4 card-title">Полёт в тоннеле</h3>
+                            <p class="card-text text-muted">Скоростная погоня по подземным линиям Нью-Йорка! Темнота, неожиданные повороты и световые эффекты перенесут вас в мир Черепашек-ниндзя. Сумеете ускользнуть от злодеев?</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-tunnel">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="extreme" data-min-age="12" data-min-height="130">
+                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="extreme" data-min-age="12" data-min-height="130">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic3.webp" class="card-img-top object-fit-cover" alt="Молот судьбы"></div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column p-4">
                             <div><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 12 лет</span><span class="badge text-bg-light border mb-2">рост от 130 см</span></div>
-                            <h3 class="h5 card-title">Молот судьбы</h3>
-                            <p class="card-text text-muted">Подъём на 240 градусов — бешеная скорость и гарантированный прилив адреналина!</p>
+                            <h3 class="h4 card-title">Молот судьбы</h3>
+                            <p class="card-text text-muted">Подъём на 240 градусов и стремительное вращение — испытание для любителей экстрима. Разделите острые ощущения с друзьями и почувствуйте размах «Молота судьбы».</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-hammer">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="extreme" data-min-age="10" data-min-height="120">
+                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="extreme" data-min-age="10" data-min-height="120">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic4.webp" class="card-img-top object-fit-cover" alt="Красная башня"></div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column p-4">
                             <div><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 10 лет</span><span class="badge text-bg-light border mb-2">рост от 120 см</span></div>
-                            <h3 class="h5 card-title">Красная башня</h3>
-                            <p class="card-text text-muted">Захватывающий полёт под стеклянным куполом «Острова Мечты»!</p>
+                            <h3 class="h4 card-title">Красная башня</h3>
+                            <p class="card-text text-muted">Взгляните на сказочный мир с высоты и приготовьтесь к полёту под стеклянным куполом. «Красная башня» подарит острые ощущения и проверит вашу смелость.</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-tower">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="kids" data-min-age="3" data-min-height="90">
+                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="kids" data-min-age="3" data-min-height="90">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic5.webp" class="card-img-top object-fit-cover" alt="Сладкая карусель"></div>
-                        <div class="card-body d-flex flex-column">
-                            <div><span class="badge bg-info text-dark me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
-                            <h3 class="h5 card-title">Сладкая карусель</h3>
-                            <p class="card-text text-muted">Сладкая карусель – сказочное чаепитие!</p>
+                        <div class="card-body d-flex flex-column p-4">
+                            <div><span class="badge bg-secondary text-white me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
+                            <h3 class="h4 card-title">Сладкая карусель</h3>
+                            <p class="card-text text-muted">Сказочное чаепитие среди конфет и леденцов! Выберите кабинку-пирожное и закружитесь в мире сладостей. Плавное вращение превратит поездку в маленькую семейную историю.</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-sweet">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="family" data-min-age="6" data-min-height="110">
+                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="family" data-min-age="6" data-min-height="110">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic6.webp" class="card-img-top object-fit-cover" alt="Ледяная карусель"></div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column p-4">
                             <div><span class="badge bg-success me-1 mb-2">Семейные</span><span class="badge text-bg-light border me-1 mb-2">от 6 лет</span><span class="badge text-bg-light border mb-2">рост от 110 см</span></div>
-                            <h3 class="h5 card-title">Ледяная карусель</h3>
-                            <p class="card-text text-muted">Аттракцион для тех, кто не боится холода!</p>
+                            <h3 class="h4 card-title">Ледяная карусель</h3>
+                            <p class="card-text text-muted">Отправляйтесь в зимнюю сказку на весёлой карусели. Рассматривайте ледяные декорации и делитесь впечатлениями с близкими — это приключение приятно пережить всей семьёй.</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-ice">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="kids" data-min-age="3" data-min-height="90">
+                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="kids" data-min-age="3" data-min-height="90">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/pic7.jpg" class="card-img-top object-fit-cover" alt="Автопоезд"></div>
-                        <div class="card-body d-flex flex-column">
-                            <div><span class="badge bg-info text-dark me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
-                            <h3 class="h5 card-title">Автопоезд</h3>
-                            <p class="card-text text-muted">Неспешная поездка на паровозике по сказочному городку.</p>
+                        <div class="card-body d-flex flex-column p-4">
+                            <div><span class="badge bg-secondary text-white me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
+                            <h3 class="h4 card-title">Автопоезд</h3>
+                            <p class="card-text text-muted">Прокатитесь на маленьком паровозике по сказочному городку. Разглядывайте необычные домики и придумывайте истории о жителях. Неспешная поездка поможет малышам освоиться в парке.</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-autotrain">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="extreme" data-min-age="12" data-min-height="140">
+                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="extreme" data-min-age="12" data-min-height="140">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/mill.png" class="card-img-top object-fit-cover" alt="Мельница" loading="lazy"></div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column p-4">
                             <div><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">Рост от 140 см</span><span class="badge text-bg-light border mb-2">От 12 лет</span></div>
-                            <h3 class="h5 card-title">Мельница</h3>
-                            <p class="card-text text-muted">Забудьте о правилах гравитации! Перевороты и скоростные вращения на высоте 16 метров.</p>
+                            <h3 class="h4 card-title">Мельница</h3>
+                            <p class="card-text text-muted">Шесть крыльев «Мельницы» поднимут вас на высоту 16 метров. Вращающиеся сиденья превращают каждый оборот в непредсказуемый полёт — для любителей скорости и переворотов.</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-mill">Подробнее</button>
                         </div>
                     </div>
-                </div>                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="family" data-min-age="0" data-min-height="120">
+                </div>                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="family" data-min-age="0" data-min-height="120">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/volt.png" class="card-img-top object-fit-cover" alt="Вольт" loading="lazy"></div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column p-4">
                             <div><span class="badge bg-primary me-1 mb-2">Семейный</span><span class="badge text-bg-light border me-1 mb-2">Рост от 120 см</span><span class="badge text-bg-light border mb-2">Экспресс-вход доступен</span></div>
-                            <h3 class="h5 card-title">Вольт</h3>
-                            <p class="card-text text-muted">Впервые на арене — акробатический вольтаж на летающей скамье.</p>
+                            <h3 class="h4 card-title">Вольт</h3>
+                            <p class="card-text text-muted">Цирковой номер на летающей скамье! «Вольт» поднимает 18 смельчаков на высоту 6 метров, чередуя стремительные взлёты и резкие падения. Держитесь крепче!</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-volt">Подробнее</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4" data-attraction data-category="family" data-min-age="0" data-min-height="120" data-max-height="190">
+                <div class="col-12 col-md-6 col-lg-4" data-attraction data-category="family" data-min-age="0" data-min-height="120" data-max-height="190">
                     <div class="card h-100 shadow-sm">
                         <div class="ratio ratio-16x9 overflow-hidden rounded-top"><img src="images/harbor.png" class="card-img-top object-fit-cover" alt="Весёлая гавань" loading="lazy"></div>
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body d-flex flex-column p-4">
                             <div><span class="badge bg-primary me-1 mb-2">Семейный</span><span class="badge text-bg-light border me-1 mb-2">Рост 120–190 см</span><span class="badge text-bg-light border mb-2">Экспресс-вход доступен</span></div>
-                            <h3 class="h5 card-title">Весёлая гавань</h3>
-                            <p class="card-text text-muted">На абордаж! Морское приключение на корабле, который раскачивается навстречу воображаемым волнам.</p>
+                            <h3 class="h4 card-title">Весёлая гавань</h3>
+                            <p class="card-text text-muted">На абордаж! 15-метровый корабль раскачивается навстречу воображаемому шторму, словно преодолевая 8-метровые волны. Соберите команду для морского приключения с ощущением свободного падения.</p>
                             <button type="button" class="btn btn-outline-primary mt-auto align-self-start" data-bs-toggle="modal" data-bs-target="#attraction-modal-harbor">Подробнее</button>
                         </div>
                     </div>
@@ -375,7 +355,7 @@
                 </div>
 
                 <div class="col-12 col-lg-5">
-                    <div class="mb-3"><span class="badge bg-info text-dark me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
+                    <div class="mb-3"><span class="badge bg-secondary text-white me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
                     <h3 class="h4">Об аттракционе</h3>
                         <p>Гости кружатся в кабинках-пирожных с кремом и посыпкой среди конфет и леденцов. Карусель плавно вращается, а каждая кабинка ещё и кружится вокруг себя.</p>
                         <p>Яркий и добрый аттракцион для самых маленьких. Дети ростом ниже 110 см катаются вместе со взрослым.</p>
@@ -455,7 +435,7 @@
                 </div>
 
                 <div class="col-12 col-lg-5">
-                    <div class="mb-3"><span class="badge bg-info text-dark me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
+                    <div class="mb-3"><span class="badge bg-secondary text-white me-1 mb-2">Детские</span><span class="badge text-bg-light border me-1 mb-2">от 3 лет</span><span class="badge text-bg-light border mb-2">рост от 90 см</span></div>
                     <h3 class="h4">Об аттракционе</h3>
                         <p>Маленький автопоезд везёт гостей через сказочный городок с весёлыми домиками и героями мультфильмов.</p>
                         <p>Подходит для самых маленьких: никакой высоты и резких поворотов.</p>
@@ -605,7 +585,6 @@
                             <li><a class="link-light" href="order.html">Билеты</a></li>
                             <li><a class="link-light" href="index.html#park-story">Легенда парка</a></li>
                             <li><a class="link-light" href="index.html#faq">Частые вопросы</a></li>
-                            <li><a class="link-light" href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -617,14 +596,14 @@
                         <p class="mb-0"><span class="me-2" aria-hidden="true">✉️</span><a class="link-light" href="mailto:info@dreamisland.ru">info@dreamisland.ru</a></p>
                     </address>
                     <div class="d-flex flex-wrap gap-3 mt-2 mb-4" aria-label="Мессенджеры">
-                        <span class="d-inline-flex align-items-center gap-2 text-white-50" role="link" aria-disabled="true" title="Ссылка скоро появится">
+                        <a class="d-inline-flex align-items-center gap-2 link-light text-decoration-none" href="https://t.me/ostrov_mechty_demo_7f2c9a" target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.6 3.3 18.4 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L5.9 13.8 1.1 12.3c-1-.3-1-1 .2-1.5L20 3.6c.9-.4 1.7-.1 1.6-.3Z"/></svg>
                             Telegram
-                        </span>
-                        <span class="d-inline-flex align-items-center gap-2 text-white-50" role="link" aria-disabled="true" title="Ссылка скоро появится">
+                        </a>
+                        <a class="d-inline-flex align-items-center gap-2 link-light text-decoration-none" href="https://max.ru/ostrov_mechty_demo_7f2c9a" target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="208 208 544 544" aria-hidden="true" focusable="false"><image href="images/max.png" width="960" height="960"/></svg>
                             MAX
-                        </span>
+                        </a>
                     </div>
                     <p class="text-white-50 mb-2">Планируете первое путешествие в парк?</p>
                     <a class="link-light" href="contacts.html#map">Посмотреть на карте и построить маршрут →</a>
@@ -641,7 +620,7 @@
     </script>
     <script src="js/catalog.js" defer></script>
     <button type="button" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 p-3 shadow z-3 d-none" aria-label="Наверх" title="Наверх">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 12 7-7 7 7M12 5v14"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 11 7-7 7 7M5 20l7-7 7 7"/></svg>
     </button>
     <script src="js/back-to-top.js" defer></script>
 </body>
