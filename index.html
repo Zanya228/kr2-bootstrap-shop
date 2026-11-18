@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <script src="js/theme.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная — Парк развлечений «Остров Мечты»</title>
 
@@ -37,13 +38,15 @@
                         <a class="nav-link" href="catalog.html">Аттракционы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="order.html">Билеты</a>
+                        <a class="nav-link" href="events.html">Мероприятия</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacts.html">Контакты</a>
                     </li>
+                    <li class="nav-item d-lg-none d-flex align-items-center gap-2 mt-2 mb-2"><form class="header-search d-flex align-items-center rounded-4 px-2" role="search" data-header-search><input type="search" class="form-control form-control-sm bg-transparent border-0 shadow-none text-light px-2" placeholder="Поиск" aria-label="Поиск по сайту" maxlength="200" autocomplete="off"><button type="button" class="btn border-0 text-light p-1 d-inline-flex align-items-center justify-content-center flex-shrink-0" data-site-search aria-label="Найти"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form><button type="button" class="theme-toggle btn btn-outline-light border-0 position-relative overflow-hidden p-2 d-inline-flex align-items-center justify-content-center" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="btn btn-primary" href="order.html">Купить билеты</a></li>
                 </ul>
             </div>
+            <div class="d-none d-lg-flex align-items-center gap-2 ms-auto flex-shrink-0"><form class="header-search d-flex align-items-center rounded-4 px-2" role="search" data-header-search><input type="search" class="form-control form-control-sm bg-transparent border-0 shadow-none text-light px-2" placeholder="Поиск" aria-label="Поиск по сайту" maxlength="200" autocomplete="off"><button type="button" class="btn border-0 text-light p-1 d-inline-flex align-items-center justify-content-center flex-shrink-0" data-site-search aria-label="Найти"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form><button type="button" class="theme-toggle btn btn-outline-light border-0 position-relative overflow-hidden p-2 d-inline-flex align-items-center justify-content-center" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="btn btn-primary" href="order.html">Купить билеты</a></div>
         </div>
     </nav>
 
@@ -56,74 +59,76 @@
                         <h1 id="hero-title" class="display-3 fw-bold mb-3">Место, где <span class="text-primary">мечты оживают</span>, а приключения становятся реальностью</h1>
                         <p class="lead text-white-50 mb-4">«Остров Мечты» — целый мир впечатлений для всей семьи. Захватывающие аттракционы, сказочные миры и моменты, которые хочется пережить снова. Ваше приключение начинается здесь.</p>
                         <div class="d-flex flex-wrap gap-2">
-                            <a class="btn btn-primary btn-lg px-4" href="order.html">Запланировать визит</a>
+                            <a class="btn btn-primary btn-lg px-4" href="order.html">Купить билеты</a>
                             <a class="btn btn-outline-light btn-lg px-4" href="catalog.html">Все аттракционы</a>
                             <a class="btn btn-outline-light btn-lg px-4" href="contacts.html#map">Как добраться</a>
                         </div>
                     </div>
                 </div>
                 <div class="park-stats row row-cols-2 row-cols-lg-4 g-3 mt-4">
-                    <div class="col"><p class="display-5 fw-bold text-primary mb-0">60+</p><p class="text-white-50 mb-0">аттракционов</p></div>
-                    <div class="col"><p class="display-5 fw-bold text-primary mb-0">15</p><p class="text-white-50 mb-0">тематических зон</p></div>
-                    <div class="col"><p class="display-5 fw-bold text-primary mb-0">100 га</p><p class="text-white-50 mb-0">пространства для отдыха</p></div>
-                    <div class="col"><p class="display-5 fw-bold text-primary mb-0">Вместе</p><p class="text-white-50 mb-0">ярче каждое приключение</p></div>
+                    <div class="col border-start border-2 border-primary ps-3"><p class="display-5 fw-bold text-primary mb-0"><span data-count-up>60</span>+</p><p class="text-white-50 mb-0">аттракционов</p></div>
+                    <div class="col border-start border-2 border-primary ps-3"><p class="display-5 fw-bold text-primary mb-0"><span data-count-up>15</span></p><p class="text-white-50 mb-0">тематических зон</p></div>
+                    <div class="col border-start border-2 border-primary ps-3"><p class="display-5 fw-bold text-primary mb-0"><span data-count-up>100</span> га</p><p class="text-white-50 mb-0">пространства для отдыха</p></div>
+                    <div class="col border-start border-2 border-primary ps-3"><p class="display-5 fw-bold text-primary mb-0">Вместе</p><p class="text-white-50 mb-0">ярче каждое приключение</p></div>
                 </div>
             </div>
         </section>
 
-        <section id="park-life" class="container my-5" aria-labelledby="park-life-title">
+        <section id="park-life" class="container my-4" aria-labelledby="park-life-title">
             <div class="row g-4 align-items-start">
                 <div class="col-12">
-                    <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/></svg></span><h2 id="park-life-title" class="mb-0 fw-bold">Целый день маленьких открытий</h2></div>
+                    <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5L16 8Z"/></svg></span><h2 id="park-life-title" class="mb-0 fw-bold">Целый день маленьких открытий</h2></div>
                     <p class="lead text-primary">Здесь у каждого приключения свой темп.</p>
                     <p>Для кого-то идеальный день начинается с головокружительного полёта, для кого-то — с неспешной прогулки и семейной фотографии. В «Острове Мечты» можно составить собственный маршрут: познакомиться с тематическими мирами, выбрать любимые аттракционы и оставить время для неожиданных открытий.</p>
                     <p class="mb-0">Приезжайте с друзьями, устройте семейный выходной или посвятите день впечатлениям вдвоём. Самое ценное в такой поездке — общие воспоминания: первый смелый шаг, заразительный смех и история, которую потом хочется рассказывать снова.</p>
                 </div>
                 <div class="col-12">
                     <div class="row g-3">
-                        <div class="col-12 col-md-6 col-lg-4"><article class="card h-100 border-0 bg-light"><div class="card-body p-4">
-                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m13 2-9 12h7l-1 8 10-13h-7l1-7Z"/></svg></span><h3 class="mb-0 h5">Для любителей скорости</h3></div>
+                        <div class="col-12 col-md-6 col-lg-4"><article class="card h-100 border-0 bg-body-tertiary"><div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m13 2-9 12h7l-1 8 10-13h-7l1-7Z"/></svg></span><h3 class="mb-0 h5">Для любителей скорости</h3></div>
                             <p class="mb-0">Начните знакомство с каталогом: полёт в тоннеле, «Молот судьбы» и «Красная башня» зададут настроение вашему приключению. Перед поездкой сравните описания и выберите, какое испытание станет первым.</p>
                         </div></article></div>
-                        <div class="col-12 col-md-6 col-lg-4"><article class="card h-100 border-0 bg-light"><div class="card-body p-4">
-                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span><h3 class="mb-0 h5">Для семейных воспоминаний</h3></div>
+                        <div class="col-12 col-md-6 col-lg-4"><article class="card h-100 border-0 bg-body-tertiary"><div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg></span><h3 class="mb-0 h5">Для семейных воспоминаний</h3></div>
                             <p class="mb-0">Выбирайте развлечения вместе с детьми и чередуйте активные впечатления с паузами. Учитывайте ограничения по росту и возрасту, чтобы маршрут подходил каждому участнику вашей компании.</p>
                         </div></article></div>
-                        <div class="col-12 col-md-12 col-lg-4"><article class="card h-100 border-0 bg-light"><div class="card-body p-4">
-                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="5" cy="5" r="3"/><circle cx="19" cy="19" r="3"/><path d="M8 5h8a4 4 0 0 1 0 8H8a3 3 0 0 0 0 6h8"/></svg></span><h3 class="mb-0 h5">Ваш маршрут без спешки</h3></div>
+                        <div class="col-12 col-md-12 col-lg-4"><article class="card h-100 border-0 bg-body-tertiary"><div class="card-body p-4">
+                            <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="5" cy="5" r="3"/><circle cx="19" cy="19" r="3"/><path d="M8 5h8a4 4 0 0 1 0 8H8a3 3 0 0 0 0 6h8"/></svg></span><h3 class="mb-0 h5">Ваш маршрут без спешки</h3></div>
                             <p>Наметьте несколько аттракционов, которые особенно хочется посетить, а между ними оставьте время на прогулку, фотографии и отдых. Не обязательно успеть всё за один день: любимое место приятно открыть заново.</p>
-                            <a class="btn btn-outline-primary" href="catalog.html">Выбрать своё приключение</a>
                         </div></article></div>
+                        <div class="col-12 text-center">
+                            <a class="btn btn-primary btn-lg" href="catalog.html">Выбрать своё приключение</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="park-story" class="bg-light border-top border-bottom" aria-labelledby="park-story-title">
-            <div class="container py-5">
+        <section id="park-story" class="bg-body-tertiary border-top border-bottom" aria-labelledby="park-story-title">
+            <div class="container py-4">
                 <div class="row g-4 gx-lg-5">
                     <div class="col-12">
                         <span class="badge text-bg-primary mb-3">Легенда парка</span>
-                        <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></svg></span><h2 id="park-story-title" class="mb-0 fw-bold">Как появился остров, которого не было на картах</h2></div>
+                        <div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 5C9 3 5 3 2 4v15c3-1 7-1 10 1 3-2 7-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></svg></span><h2 id="park-story-title" class="mb-0 fw-bold">Как появился остров, которого не было на картах</h2></div>
                         <p class="text-body-secondary mb-0">Вымышленная история о мечте, смелости и приключениях, которые начинаются с простого «а что, если?».</p>
                     </div>
-                    <div class="col-12 story-chapters">
-                        <article class="story-chapter"><div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/></svg></span><h3 class="mb-0 h5">Карта из детского альбома</h3></div>
+                    <div class="col-12"><div class="row g-4 story-chapters">
+                        <div class="col-12 col-lg-4"><article class="story-chapter"><div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3V6Zm6-3v15m6-12v15"/></svg></span><h3 class="mb-0 h5">Карта из детского альбома</h3></div>
                         <p>По нашей легенде, всё началось с девочки Миры, которая любила рисовать несуществующие страны. Однажды на пустом листе она изобразила остров: с башней до облаков, поездом сквозь горы и городом, где никто не забывает удивляться. Внизу Мира подписала: «Место, где взрослые снова умеют мечтать».</p>
-                        <p>Каждый вечер Мира возвращалась к своему рисунку и добавляла новую деталь: пристань для отважных мореплавателей, площадь для уличных артистов или карусель, похожую на праздничный торт. Она расспрашивала близких о самых заветных желаниях и находила для каждого место на острове. Постепенно альбом стал общим дневником мечтаний, а на последней странице появилась надпись: «Чтобы попасть сюда, нужно сделать первый шаг».</p>
-                        </article>
-                        <article class="story-chapter"><div class="d-flex align-items-center gap-3 mb-3 mt-4"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m4 20 12-12 4 4L8 24M14 10l4 4M5 2v6M2 5h6M19 1v4M17 3h4" transform="translate(0 -2)"/></svg></span><h3 class="mb-0 h5">Мастерская невозможного</h3></div>
+                        <p class="mb-0">Каждый вечер Мира возвращалась к своему рисунку и добавляла новую деталь: пристань для отважных мореплавателей, площадь для уличных артистов или карусель, похожую на праздничный торт. Она расспрашивала близких о самых заветных желаниях и находила для каждого место на острове. Постепенно альбом стал общим дневником мечтаний, а на последней странице появилась надпись: «Чтобы попасть сюда, нужно сделать первый шаг».</p>
+                        </article></div>
+                        <div class="col-12 col-lg-4"><article class="story-chapter"><div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m4 20 12-12 4 4L8 24M14 10l4 4M5 2v6M2 5h6M19 1v4M17 3h4" transform="translate(0 -2)"/></svg></span><h3 class="mb-0 h5">Мастерская невозможного</h3></div>
                         <p>Рисунок нашёл старый мастер Лев, хранитель необычных идей. Вместе с друзьями он открыл мастерскую: ветер учились превращать в ощущение полёта, стук колёс — в начало путешествия, а обычные улицы — в дороги к новым мирам. Но остров никак не появлялся: на карте оставалось одно белое пятно.</p>
-                        <p>В мастерскую приносили самые разные сокровища: бумажные кораблики, старые компасы, музыкальные шкатулки и письма с детскими желаниями. Для Льва каждая такая вещь становилась началом новой задумки. Он говорил, что чудо рождается там, где люди не боятся пробовать и помогают друг другу. По вечерам окна мастерской светились до самой ночи, а над столами кружились десятки эскизов будущих приключений.</p>
-                        </article>
-                        <article class="story-chapter"><div class="d-flex align-items-center gap-3 mb-3 mt-4"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></svg></span><h3 class="mb-0 h5">Первый шаг навстречу мечте</h3></div>
+                        <p class="mb-0">В мастерскую приносили самые разные сокровища: бумажные кораблики, старые компасы, музыкальные шкатулки и письма с детскими желаниями. Для Льва каждая такая вещь становилась началом новой задумки. Он говорил, что чудо рождается там, где люди не боятся пробовать и помогают друг другу. По вечерам окна мастерской светились до самой ночи, а над столами кружились десятки эскизов будущих приключений.</p>
+                        </article></div>
+                        <div class="col-12 col-lg-4"><article class="story-chapter"><div class="d-flex align-items-center gap-3 mb-3"><span class="d-inline-flex align-items-center justify-content-center text-primary bg-primary-subtle rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></svg></span><h3 class="mb-0 h5">Первый шаг навстречу мечте</h3></div>
                         <p>Тогда Мира поняла, что на рисунке не хватает гостей. Она позвала соседей, друзей и всех, кто хоть раз откладывал приключение на потом. Стоило первым путешественникам взяться за руки и шагнуть вперёд, как белое пятно заполнилось светом. У острова появились голоса, смех и собственное имя — «Остров Мечты».</p>
                         <p class="mb-0">С тех пор в нашей сказке остров растёт с каждой новой мечтой. Кто-то оставляет здесь страх высоты, кто-то находит повод провести день с близкими, а кто-то увозит идею для следующего путешествия. И у этой истории нет последней страницы: её продолжают гости.</p>
-                        </article>
+                        </article></div></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="attractions" class="container my-5">
+        <section id="attractions" class="container my-4">
             <h2 class="text-center mb-4">Популярные аттракционы</h2>
 
             <div class="row g-4">
@@ -171,7 +176,7 @@
             </div>
         </section>
 
-<section id="faq" class="container my-5">
+<section id="faq" class="container my-4">
             <h2 class="text-center mb-4">Часто задаваемые вопросы</h2>
 
             <div class="row justify-content-center">
@@ -283,7 +288,7 @@
                 </div>
 
                 <div class="col-12 col-lg-5">
-                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 10 лет</span><span class="badge text-bg-light border mb-2">рост от 120 см</span></div>
+                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge bg-body-tertiary text-body border me-1 mb-2">от 10 лет</span><span class="badge bg-body-tertiary text-body border mb-2">рост от 120 см</span></div>
                     <h3 class="h4">Об аттракционе</h3>
                         <p>Вы побываете в убежище Черепашек-ниндзя и поможете им сконструировать скоростной поезд. Вот только детали для него пришлось украсть у злодея Шреддера… Теперь он устроил погоню!</p>
                         <p>Вас ждёт ошеломительная поездка на скорости 80 км/ч в полной темноте. Путешествие будет сопровождаться медиа и световыми эффектами, петлями, неожиданными переворотами и подъемами на высоту 24 метров!</p>
@@ -323,7 +328,7 @@
                 </div>
 
                 <div class="col-12 col-lg-5">
-                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 12 лет</span><span class="badge text-bg-light border mb-2">рост от 130 см</span></div>
+                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge bg-body-tertiary text-body border me-1 mb-2">от 12 лет</span><span class="badge bg-body-tertiary text-body border mb-2">рост от 130 см</span></div>
                     <h3 class="h4">Об аттракционе</h3>
                         <p>Коварный Бакстер Стокман создал чудовищную машину для разрушения целого города! Вам предстоит опробовать зловещее изобретение на себе и прокатиться на огромном молоте-диске с вращающимися лезвиями.</p>
                         <p>Словно раскачиваясь на огромных качелях высотой с пятиэтажный дом, вы будете совершать головокружительные пролёты на 120 градусов. Аттракцион «Молот судьбы» – это испытание, которое смогут пройти только настоящие герои!</p>
@@ -363,7 +368,7 @@
                 </div>
 
                 <div class="col-12 col-lg-5">
-                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">от 10 лет</span><span class="badge text-bg-light border mb-2">рост от 120 см</span></div>
+                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge bg-body-tertiary text-body border me-1 mb-2">от 10 лет</span><span class="badge bg-body-tertiary text-body border mb-2">рост от 120 см</span></div>
                     <h3 class="h4">Об аттракционе</h3>
                         <p>32-метровая алая башня притягивает восхищенные взгляды искателей приключений, словно магнит. На этом аттракционе вы подниметесь выше облаков и насладитесь живописной панорамой парка развлечений.</p>
                         <p>Почувствуйте, что время замирает, пока вы плавно летите под большим стеклянным куполом, поднимаясь и опускаясь в свете праздничных огоньков. Оборот за оборотом радиус вращения будет увеличиваться, а вместе с ним и восторг посетителей. Всплеск адреналина, эйфория от полета, окрыляющее ощущение невесомости — вы точно захотите испытать эти эмоции снова.</p>
@@ -396,17 +401,18 @@
                         <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
                             <li><a class="link-light" href="index.html">Главная</a></li>
                             <li><a class="link-light" href="catalog.html">Аттракционы</a></li>
+                            <li><a class="link-light" href="events.html">Мероприятия</a></li>
                             <li><a class="link-light" href="order.html">Билеты</a></li>
-                            <li><a class="link-light" href="index.html#park-story">Легенда парка</a></li>
-                            <li><a class="link-light" href="index.html#faq">Частые вопросы</a></li>
                         </ul>
                     </nav>
+                    <a class="btn btn-primary mt-3" href="order.html">Купить билеты</a>
                 </div>
                 <div class="col-12 col-sm-7 col-lg-4">
                     <h2 class="h6 fw-bold mb-3">Контакты</h2>
                     <address class="mb-3">
                         <p class="text-white-50 mb-2"><span class="me-2" aria-hidden="true">📍</span>г. Москва, проспект Андропова, д. 1</p>
                         <p class="mb-2"><span class="me-2" aria-hidden="true">📞</span><a class="link-light" href="tel:+74952210000">+7 (495) 221-00-00</a></p>
+                        <p class="small text-white-50 mb-2">Время принятия звонков: 10:00-20:00</p>
                         <p class="mb-0"><span class="me-2" aria-hidden="true">✉️</span><a class="link-light" href="mailto:info@dreamisland.ru">info@dreamisland.ru</a></p>
                     </address>
                     <div class="d-flex flex-wrap gap-3 mt-2 mb-4" aria-label="Мессенджеры">
@@ -436,5 +442,10 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 11 7-7 7 7M5 20l7-7 7 7"/></svg>
     </button>
     <script src="js/back-to-top.js" defer></script>
+    <script src="js/park-stats.js" defer></script>
+    <script src="js/ticket-window.js" defer></script>
+    <script src="js/search-index.js" defer></script>
+    <script src="js/site-search.js" defer></script>
+    <script src="js/support-chat.js" defer></script>
 </body>
 </html>

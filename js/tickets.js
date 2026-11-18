@@ -66,7 +66,7 @@
       const amount = standardPrice(date);
       const colors = { 2800: 'bg-primary-subtle', 3000: 'bg-warning-subtle', 3100: 'bg-warning', 3300: 'bg-primary-subtle' };
       button.type = 'button';
-      button.className = 'btn ticket-day d-flex flex-column justify-content-between ' + (currentMonth && !past ? colors[amount] : 'bg-light text-body-secondary');
+      button.className = 'btn ticket-day d-flex flex-column justify-content-between ' + (currentMonth && !past ? colors[amount] : 'bg-body-tertiary text-body-secondary');
       button.disabled = past || !currentMonth;
       button.dataset.date = key;
       button.setAttribute('aria-pressed', String(key === dateKey(selected)));

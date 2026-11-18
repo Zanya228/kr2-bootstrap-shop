@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <script src="js/theme.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мельница — Остров Мечты</title>
 
@@ -37,18 +38,20 @@
                         <a class="nav-link active" aria-current="page" href="catalog.html">Аттракционы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="order.html">Билеты</a>
+                        <a class="nav-link" href="events.html">Мероприятия</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contacts.html">Контакты</a>
                     </li>
+                    <li class="nav-item d-lg-none d-flex align-items-center gap-2 mt-2 mb-2"><form class="header-search d-flex align-items-center rounded-4 px-2" role="search" data-header-search><input type="search" class="form-control form-control-sm bg-transparent border-0 shadow-none text-light px-2" placeholder="Поиск" aria-label="Поиск по сайту" maxlength="200" autocomplete="off"><button type="button" class="btn border-0 text-light p-1 d-inline-flex align-items-center justify-content-center flex-shrink-0" data-site-search aria-label="Найти"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form><button type="button" class="theme-toggle btn btn-outline-light border-0 position-relative overflow-hidden p-2 d-inline-flex align-items-center justify-content-center" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="btn btn-primary" href="order.html">Купить билеты</a></li>
                 </ul>
             </div>
+            <div class="d-none d-lg-flex align-items-center gap-2 ms-auto flex-shrink-0"><form class="header-search d-flex align-items-center rounded-4 px-2" role="search" data-header-search><input type="search" class="form-control form-control-sm bg-transparent border-0 shadow-none text-light px-2" placeholder="Поиск" aria-label="Поиск по сайту" maxlength="200" autocomplete="off"><button type="button" class="btn border-0 text-light p-1 d-inline-flex align-items-center justify-content-center flex-shrink-0" data-site-search aria-label="Найти"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form><button type="button" class="theme-toggle btn btn-outline-light border-0 position-relative overflow-hidden p-2 d-inline-flex align-items-center justify-content-center" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="btn btn-primary" href="order.html">Купить билеты</a></div>
         </div>
     </nav>
 
     <main>
-        <section class="bg-light border-bottom">
+        <section class="bg-body-tertiary border-bottom">
             <div class="container py-5">
                 <nav aria-label="Навигационная цепочка"><ol class="breadcrumb mb-3"><li class="breadcrumb-item"><a href="index.html">Главная</a></li><li class="breadcrumb-item"><a href="catalog.html">Аттракционы</a></li><li class="breadcrumb-item active" aria-current="page">Мельница</li></ol></nav>
                 <h1 class="display-5 fw-bold">Мельница</h1>
@@ -68,10 +71,9 @@
                     </table>
                 </div>
                 <div class="col-12 col-lg-5">
-                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge text-bg-light border me-1 mb-2">Рост от 140 см</span><span class="badge text-bg-light border mb-2">От 12 лет</span></div>
+                    <div class="mb-3"><span class="badge bg-danger me-1 mb-2">Экстрим</span><span class="badge bg-body-tertiary text-body border me-1 mb-2">Рост от 140 см</span><span class="badge bg-body-tertiary text-body border mb-2">От 12 лет</span></div>
                     <h2 class="h4">Об аттракционе</h2>
                     <p>Экстремальная «Мельница» приглашает смельчаков испытать головокружительные перевороты и скоростные вращения на высоте 16 метров. Шесть крыльев, словно лопасти, будут вращаться по часовой стрелке, а закреплённые на них сиденья — хаотично крутиться под углом в 70 градусов.</p><p>Катание на «Мельнице» — это всегда полёт по непредсказуемой траектории, ведь положение кабинок меняется при каждом запуске аттракциона. Вихрь незабываемых эмоций гарантирован!</p>
-
 
                     <p>Здесь невозможно заранее угадать, какое положение займёт ваша кабинка в следующий момент. Вращение крыльев и движение сидений складываются в ощущение полёта, где привычные ориентиры постоянно меняются, а каждый новый оборот приносит свою волну эмоций.</p>
                     <p>«Мельница» станет ярким пунктом маршрута для компании, которая любит экстремальные развлечения. Оставьте после поездки время, чтобы перевести дух, поделиться впечатлениями и решить, какое приключение достойно стать следующим.</p>
@@ -98,17 +100,18 @@
                         <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
                             <li><a class="link-light" href="index.html">Главная</a></li>
                             <li><a class="link-light" href="catalog.html">Аттракционы</a></li>
+                            <li><a class="link-light" href="events.html">Мероприятия</a></li>
                             <li><a class="link-light" href="order.html">Билеты</a></li>
-                            <li><a class="link-light" href="index.html#park-story">Легенда парка</a></li>
-                            <li><a class="link-light" href="index.html#faq">Частые вопросы</a></li>
                         </ul>
                     </nav>
+                    <a class="btn btn-primary mt-3" href="order.html">Купить билеты</a>
                 </div>
                 <div class="col-12 col-sm-7 col-lg-4">
                     <h2 class="h6 fw-bold mb-3">Контакты</h2>
                     <address class="mb-3">
                         <p class="text-white-50 mb-2"><span class="me-2" aria-hidden="true">📍</span>г. Москва, проспект Андропова, д. 1</p>
                         <p class="mb-2"><span class="me-2" aria-hidden="true">📞</span><a class="link-light" href="tel:+74952210000">+7 (495) 221-00-00</a></p>
+                        <p class="small text-white-50 mb-2">Время принятия звонков: 10:00-20:00</p>
                         <p class="mb-0"><span class="me-2" aria-hidden="true">✉️</span><a class="link-light" href="mailto:info@dreamisland.ru">info@dreamisland.ru</a></p>
                     </address>
                     <div class="d-flex flex-wrap gap-3 mt-2 mb-4" aria-label="Мессенджеры">
@@ -138,5 +141,9 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 11 7-7 7 7M5 20l7-7 7 7"/></svg>
     </button>
     <script src="js/back-to-top.js" defer></script>
+    <script src="js/ticket-window.js" defer></script>
+    <script src="js/search-index.js" defer></script>
+    <script src="js/site-search.js" defer></script>
+    <script src="js/support-chat.js" defer></script>
 </body>
 </html>

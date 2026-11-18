@@ -1,30 +1,43 @@
 (() => {
   const form = document.getElementById('attraction-filters');
-  const cards = [...document.querySelectorAll('[data-attraction]')];
+  if (!form) return;
+
+  const age = form.elements.namedItem('age');
+  const height = form.elements.namedItem('height');
+  const category = form.elements.namedItem('cat');
+  const attractions = Array.from(document.querySelectorAll('[data-attraction]'));
   const summary = document.getElementById('filter-summary');
   const empty = document.getElementById('filter-empty');
 
-  function applyFilters() {
-    const values = new FormData(form);
-    const age = values.get('age');
-    const height = values.get('height');
-    const category = values.get('cat');
-    let count = 0;
+  function updateResults() {
+    let visibleCount = 0;
 
-    cards.forEach(card => {
-      const matches = (age === 'all' || Number(age) >= Number(card.dataset.minAge))
-        && (height === 'all' || Number(height) >= Number(card.dataset.minHeight))
-        && (category === 'all' || category === card.dataset.category);
-      card.classList.toggle('d-none', !matches);
-      if (matches) count++;
-    });
+    for (const attraction of attractions) {
+      const { minAge, minHeight, maxHeight, category: attractionCategory } = attraction.dataset;
+      const matchesAge = age.value === 'all' || Number(age.value) >= Number(minAge);
+      const matchesHeight = height.value === 'all' || (
+        Number(height.value) >= Number(minHeight) &&
+        (!maxHeight || Number(height.value) <= Number(maxHeight))
+      );
+      const matchesCategory = category.value === 'all' || category.value === attractionCategory;
+      const visible = matchesAge && matchesHeight && matchesCategory;
 
-    summary.textContent = `Показано ${count} из ${cards.length} аттракционов`;
-    empty.classList.toggle('d-none', count !== 0);
+      attraction.classList.toggle('d-none', !visible);
+      if (visible) visibleCount += 1;
+    }
+
+    summary.textContent = `Показано ${visibleCount} из ${attractions.length} аттракционов`;
+    empty.classList.toggle('d-none', visibleCount > 0);
   }
 
-  form.addEventListener('change', applyFilters);
-  form.addEventListener('submit', event => event.preventDefault());
-  form.addEventListener('reset', () => setTimeout(applyFilters, 0));
-  applyFilters();
+  form.addEventListener('change', updateResults);
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    updateResults();
+  });
+  form.addEventListener('reset', () => {
+    queueMicrotask(updateResults);
+  });
+
+  updateResults();
 })();

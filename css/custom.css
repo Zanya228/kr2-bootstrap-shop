@@ -25,72 +25,97 @@
 }
 
 :root {
-  scroll-behavior: auto;
-}
-
-*,
-*::before,
-*::after {
-  transition: none !important;
-  animation: none !important;
-}
-
-/* Keep anchor targets below the sticky navbar. */
-:root {
   scroll-padding-top: 5rem;
 }
 
-/* Center links relative to the entire navbar on desktop. */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.theme-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.theme-icon {
+  position: absolute;
+  pointer-events: none;
+  transform: rotate(0) scale(1);
+  opacity: 1;
+}
+
+.theme-icon-sun {
+  opacity: 0;
+  transform: rotate(-90deg) scale(.5);
+}
+
+[data-bs-theme="dark"] .theme-icon-moon {
+  opacity: 0;
+  transform: rotate(90deg) scale(.5);
+}
+
+[data-bs-theme="dark"] .theme-icon-sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+:where(.motion-enabled) :is(.theme-changing body,
+.theme-changing body *,
+.theme-changing :is(#attractions .card, [data-attraction] .card, [data-ticket], #park-life .card)) {
+  transition: background-color .4s ease, color .4s ease,
+    border-color .4s ease, box-shadow .4s ease, transform .25s ease;
+}
+
+:where(.motion-enabled) :is(.theme-changing .theme-toggle .theme-icon) {
+  transition: opacity .3s ease, transform .4s ease;
+}
+
+[data-bs-theme="dark"] .theme-orange {
+  --bs-primary-text-emphasis: #ffb37d;
+  --bs-primary-bg-subtle: #462512;
+  --bs-link-color-rgb: 255, 163, 102;
+  --bs-link-hover-color-rgb: 255, 193, 153;
+}
+
+.site-search-window {
+  z-index: 1040;
+  width: min(26rem, calc(100% - 2rem));
+  overscroll-behavior: contain;
+  transform-origin: top right;
+}
+
+.navbar-collapse,
+.site-search-window .form-control,
+.header-search .form-control {
+  min-width: 0;
+}
+
+#site-search-results {
+  max-height: min(16rem, 40dvh);
+  overscroll-behavior: contain;
+}
+
+.site-search-snippet {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+@keyframes site-search-appear {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
-/* Full-width photo hero; layout and typography use Bootstrap utilities. */
+:where(.motion-enabled) :is(.site-search-window:not([hidden])) {
+  animation: site-search-appear .18s ease-out both;
+}
+
 .park-hero {
   min-height: calc(100svh - 56px);
   background: linear-gradient(90deg, rgba(0, 0, 0, .88), rgba(0, 0, 0, .45)),
     url("../images/pic1.jpg") center / cover no-repeat;
-}
-
-/* A compact home layout keeps related content together. */
-.home-page .park-hero > .container {
-  padding-block: clamp(2rem, 4vw, 3.5rem) !important;
-}
-
-.home-page main > .container {
-  margin-block: 2rem !important;
-}
-
-.home-page #park-story > .container {
-  padding-block: 2rem !important;
-}
-
-.home-page .park-stats > .col {
-  border-left: 2px solid var(--bs-primary);
-  padding-left: 1rem;
-}
-
-.home-page .story-chapters {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.home-page .story-chapter > .d-flex {
-  margin-top: 0 !important;
-}
-
-.home-page .story-chapter > p:last-child {
-  margin-bottom: 0;
-}
-
-@media (min-width: 992px) {
-  .home-page .story-chapters {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @keyframes park-stat-reveal {
@@ -104,89 +129,58 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .home-page .park-stats > .col {
-    animation: park-stat-reveal .65s ease-out both !important;
-  }
-
-  .home-page .park-stats > .col:nth-child(2) {
-    animation-delay: .15s !important;
-  }
-
-  .home-page .park-stats > .col:nth-child(3) {
-    animation-delay: .3s !important;
-  }
-
-  .home-page .park-stats > .col:nth-child(4) {
-    animation-delay: .45s !important;
-  }
+:where(.motion-enabled) :is(.home-page .park-stats > .col) {
+  animation: park-stat-reveal .65s ease-out both;
 }
 
-/* Scoped motion: Bootstrap handles the FAQ collapse animation. */
-@media (prefers-reduced-motion: no-preference) {
-  #attractions .card,
-  [data-attraction] .card,
-  [data-ticket],
-  #park-life .card {
-    transition: transform .25s ease, box-shadow .25s ease !important;
-  }
-
-  #attractions .card-img-top,
-  [data-attraction] .card-img-top {
-    transition: transform .4s ease !important;
-  }
-
-  #attractions .card:focus-within,
-  [data-attraction] .card:focus-within,
-  [data-ticket]:focus-within,
-  #park-life .card:focus-within {
-    transform: translateY(-6px);
-    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
-  }
-
-  #attractions .card:focus-within .card-img-top,
-  [data-attraction] .card:focus-within .card-img-top {
-    transform: scale(1.05);
-  }
-
-  #faq .collapsing {
-    transition: height .35s ease !important;
-  }
-
-  #faq .accordion-button {
-    transition: var(--bs-accordion-transition) !important;
-  }
-
-  #faq .accordion-button::after {
-    transition: var(--bs-accordion-btn-icon-transition) !important;
-  }
+:where(.motion-enabled) :is(.home-page .park-stats > .col:nth-child(2)) {
+  animation-delay: .15s;
 }
 
-@media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  #attractions .card:hover,
-  [data-attraction] .card:hover,
-  [data-ticket]:hover,
-  #park-life .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
-  }
-
-  #attractions .card:hover .card-img-top,
-  [data-attraction] .card:hover .card-img-top {
-    transform: scale(1.05);
-  }
+:where(.motion-enabled) :is(.home-page .park-stats > .col:nth-child(3)) {
+  animation-delay: .3s;
 }
 
-/* Restore Bootstrap modal transitions within the global motion override. */
-@media (prefers-reduced-motion: no-preference) {
-  .modal.fade,
-  .modal-backdrop.fade {
-    transition: opacity .15s linear !important;
-  }
+:where(.motion-enabled) :is(.home-page .park-stats > .col:nth-child(4)) {
+  animation-delay: .45s;
+}
 
-  .modal.fade .modal-dialog {
-    transition: transform .3s ease-out !important;
-  }
+:where(.motion-enabled) :is(#attractions .card,
+[data-attraction] .card,
+[data-ticket],
+#park-life .card) {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+:where(.motion-enabled) :is(#attractions .card-img-top,
+[data-attraction] .card-img-top) {
+  transition: transform .4s ease;
+}
+
+:where(.motion-enabled) :is(#attractions .card:focus-within,
+[data-attraction] .card:focus-within,
+[data-ticket]:focus-within,
+#park-life .card:focus-within) {
+  transform: translateY(-6px);
+  box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
+}
+
+:where(.motion-enabled) :is(#attractions .card:focus-within .card-img-top,
+[data-attraction] .card:focus-within .card-img-top) {
+  transform: scale(1.05);
+}
+
+:where(.motion-enabled.hover-enabled) :is(#attractions .card:hover,
+[data-attraction] .card:hover,
+[data-ticket]:hover,
+#park-life .card:hover) {
+  transform: translateY(-6px);
+  box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important;
+}
+
+:where(.motion-enabled.hover-enabled) :is(#attractions .card:hover .card-img-top,
+[data-attraction] .card:hover .card-img-top) {
+  transform: scale(1.05);
 }
 
 .ticket-calendar {
@@ -201,12 +195,10 @@
   font-size: .75rem;
 }
 
-@media (min-width: 1200px) {
-  #booking-summary {
-    top: 5rem;
-    max-height: calc(100dvh - 6rem);
-    overflow-y: auto;
-  }
+#booking-summary {
+  top: 5rem;
+  max-height: calc(100dvh - 6rem);
+  overflow-y: auto;
 }
 
 .theme-orange .accordion {
@@ -234,4 +226,58 @@
 .theme-orange [data-quantity] {
   --bs-btn-disabled-color: var(--bs-secondary);
   --bs-btn-disabled-border-color: var(--bs-secondary);
+}
+
+.ticket-window {
+  width: min(96vw, 88rem);
+  max-width: none;
+}
+
+.ticket-window iframe {
+  height: 82dvh;
+}
+
+.ticket-window::backdrop {
+  background: rgba(0, 0, 0, .55);
+}
+
+body:has(.ticket-window[open]) {
+  overflow: hidden;
+}
+
+.ticket-window-page > :is(nav, footer, #back-to-top),
+.ticket-window-page main > section:first-child {
+  display: none !important;
+}
+
+.ticket-window-page #booking-summary {
+  max-height: none;
+  overflow: visible;
+}
+
+.ticket-window-page #booking-summary > .card {
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, .18) !important;
+}
+
+.ticket-window-page #booking-summary > .card {
+  max-height: calc(100dvh - 6rem);
+  overflow-y: auto;
+}
+
+.header-search {
+  width: 9rem;
+  background-color: #29292c;
+}
+
+.header-search .form-control::placeholder {
+  color: #adb5bd;
+}
+
+.support-chat {
+  width: min(21rem, calc(100vw - 2rem));
+}
+
+#support-chat-panel > .card {
+  max-height: calc(100dvh - 6rem);
+  overflow-y: auto;
 }

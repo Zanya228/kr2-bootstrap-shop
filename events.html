@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <script src="js/theme.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мероприятия — Парк развлечений «Остров Мечты»</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="theme-orange">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container position-relative">
+            <a class="navbar-brand d-inline-flex align-items-center gap-2 fw-bold" href="index.html"><span class="d-inline-flex align-items-center justify-content-center bg-primary rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M3 21V9l3-4 3 4v3h2V5H9V2h2v1h4v3h-2v6h2V9l3-4 3 4v12h-7v-5a2 2 0 0 0-4 0v5H3Zm2-10v3h2v-3H5Zm12 0v3h2v-3h-2Z"/></svg></span><span>Остров <span class="text-primary">Мечты</span></span></a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Переключить навигацию"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav mx-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Аттракционы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="events.html">Мероприятия</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Контакты</a>
+                    </li>
+                    <li class="nav-item d-lg-none d-flex align-items-center gap-2 mt-2 mb-2"><form class="header-search d-flex align-items-center rounded-4 px-2" role="search" data-header-search><input type="search" class="form-control form-control-sm bg-transparent border-0 shadow-none text-light px-2" placeholder="Поиск" aria-label="Поиск по сайту" maxlength="200" autocomplete="off"><button type="button" class="btn border-0 text-light p-1 d-inline-flex align-items-center justify-content-center flex-shrink-0" data-site-search aria-label="Найти"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form><button type="button" class="theme-toggle btn btn-outline-light border-0 position-relative overflow-hidden p-2 d-inline-flex align-items-center justify-content-center" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="btn btn-primary" href="order.html">Купить билеты</a></li>
+                </ul>
+            </div>
+            <div class="d-none d-lg-flex align-items-center gap-2 ms-auto flex-shrink-0"><form class="header-search d-flex align-items-center rounded-4 px-2" role="search" data-header-search><input type="search" class="form-control form-control-sm bg-transparent border-0 shadow-none text-light px-2" placeholder="Поиск" aria-label="Поиск по сайту" maxlength="200" autocomplete="off"><button type="button" class="btn border-0 text-light p-1 d-inline-flex align-items-center justify-content-center flex-shrink-0" data-site-search aria-label="Найти"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form><button type="button" class="theme-toggle btn btn-outline-light border-0 position-relative overflow-hidden p-2 d-inline-flex align-items-center justify-content-center" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="btn btn-primary" href="order.html">Купить билеты</a></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="bg-body-tertiary border-bottom">
+            <div class="container py-5">
+                <nav aria-label="Навигационная цепочка">
+                    <ol class="breadcrumb mb-3">
+                        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Мероприятия</li>
+                    </ol>
+                </nav>
+                <div class="row g-4 align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="display-5 fw-bold">Мероприятия в «Острове Мечты»</h1>
+                        <p class="lead mb-4">Выберите программу для семейного выходного, дня рождения или встречи с командой.</p>
+                        <a class="btn btn-primary btn-lg" href="#event-formats">Посмотреть программы</a>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow-sm">
+                            <img src="images/pic1.jpg" class="object-fit-cover" alt="Вечерний вид на парк «Остров Мечты»">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="event-formats" class="container my-5" aria-labelledby="event-formats-title">
+            <h2 id="event-formats-title" class="h3 fw-bold mb-2">Программы мероприятий</h2>
+            <p class="text-body-secondary mb-4">Даты и зоны проведения ориентировочные. Перед визитом уточните расписание и условия участия у организаторов.</p>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">🏴‍☠️</span> Тайна Весёлой гавани</h3>
+                            <p class="small text-body-secondary mb-2">Семейный квест</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-11-21">21 ноября 2026</time><br><span aria-hidden="true">📍</span> Зона «Весёлая гавань»</p>
+                            <p>Получите карту сокровищ, разгадайте шифры и соберите подсказки на тематических станциях. Финал — поиск сундука по координатам, которые нашла ваша команда.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">🎨</span> Мастерская волшебных фонариков</h3>
+                            <p class="small text-body-secondary mb-2">Творческий мастер-класс</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-11-22">22 ноября 2026</time><br><span aria-hidden="true">📍</span> Творческая зона</p>
+                            <p>Выберите трафарет, соберите фонарик из цветной бумаги и украсьте его звёздами. Готовую поделку можно забрать домой.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">🎪</span> Цирк чудес</h3>
+                            <p class="small text-body-secondary mb-2">Представление для всей семьи</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-11-28">28 ноября 2026</time><br><span aria-hidden="true">📍</span> Сценическая зона</p>
+                            <p>В программе — номер с жонглированием, фокусы с исчезающими предметами и финальная игра, в которой зрители помогают ведущему разгадать секрет трюка.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">📸</span> Фотоохота по сказочным мирам</h3>
+                            <p class="small text-body-secondary mb-2">Прогулка с заданиями</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-11-29">29 ноября 2026</time><br><span aria-hidden="true">📍</span> Городской променад</p>
+                            <p>Найдите на маршруте башню, сказочный транспорт и необычного героя. На каждой остановке сделайте снимок по заданию и соберите семейный фотоальбом.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">🎂</span> День рождения капитана</h3>
+                            <p class="small text-body-secondary mb-2">Праздник для компании</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-12-05">5 декабря 2026</time><br><span aria-hidden="true">📍</span> Зона праздников</p>
+                            <p>Ведущий собирает экипаж именинника. Гостей ждут морская викторина, командные игры и финал с поздравлением и тортом.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">🏆</span> Кубок команд «Острова Мечты»</h3>
+                            <p class="small text-body-secondary mb-2">Командное соревнование</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-12-06">6 декабря 2026</time><br><span aria-hidden="true">📍</span> Зона командных игр</p>
+                            <p>Разделитесь на команды и пройдите три станции: викторину, испытание на координацию и сборку карты на время. В финале ведущий объявит победителей.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">🎭</span> Театр теней «Зимняя сказка»</h3>
+                            <p class="small text-body-secondary mb-2">Интерактивное представление</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-12-12">12 декабря 2026</time><br><span aria-hidden="true">📍</span> Сценическая зона</p>
+                            <p>Посмотрите сказку о пропавшей звезде, а после спектакля попробуйте оживить силуэты героев за экраном.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">❄️</span> Мастерская снежинок</h3>
+                            <p class="small text-body-secondary mb-2">Семейный мастер-класс</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-12-13">13 декабря 2026</time><br><span aria-hidden="true">📍</span> Творческая зона</p>
+                            <p>Вырежьте ажурные снежинки, соберите из них гирлянду и заберите её домой, чтобы украсить окно или ёлку.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <article class="card h-100 shadow-sm rounded-4">
+                        <div class="card-body d-flex flex-column p-4">
+                            <h3 class="h5 fw-bold"><span aria-hidden="true">🧩</span> Секрет игрушечного города</h3>
+                            <p class="small text-body-secondary mb-2">Семейная игра с заданиями</p>
+                            <p class="small mb-3"><span aria-hidden="true">📅</span> <time datetime="2026-12-19">19 декабря 2026</time><br><span aria-hidden="true">📍</span> Городской променад</p>
+                            <p>Отыщите детали механической игрушки на игровых станциях. В финале сложите их в нужном порядке, чтобы открыть шкатулку мастера.</p>
+                            <a class="btn btn-outline-primary mt-auto align-self-start" href="contacts.html#contact-form">Уточнить детали</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4 gx-lg-5 pb-5">
+                <div class="col-12 col-lg-5">
+                    <a class="d-inline-flex align-items-center gap-2 text-white text-decoration-none fw-bold fs-5 mb-3" href="index.html">
+                        <span class="d-inline-flex align-items-center justify-content-center bg-primary rounded-3 p-2 flex-shrink-0" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M3 21V9l3-4 3 4v3h2V5H9V2h2v1h4v3h-2v6h2V9l3-4 3 4v12h-7v-5a2 2 0 0 0-4 0v5H3Zm2-10v3h2v-3H5Zm12 0v3h2v-3h-2Z"/></svg></span>
+                        <span>Остров <span class="text-primary">Мечты</span></span>
+                    </a>
+                    <p class="text-white-50 mb-0">Мир приключений для всей семьи в Москве. Захватывающие аттракционы, сказочные истории и впечатления, которые остаются с вами.</p>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3">
+                    <h2 class="h6 fw-bold mb-3">Разделы</h2>
+                    <nav aria-label="Навигация в подвале">
+                        <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                            <li><a class="link-light" href="index.html">Главная</a></li>
+                            <li><a class="link-light" href="catalog.html">Аттракционы</a></li>
+                            <li><a class="link-light" href="events.html">Мероприятия</a></li>
+                            <li><a class="link-light" href="order.html">Билеты</a></li>
+                        </ul>
+                    </nav>
+                    <a class="btn btn-primary mt-3" href="order.html">Купить билеты</a>
+                </div>
+                <div class="col-12 col-sm-7 col-lg-4">
+                    <h2 class="h6 fw-bold mb-3">Контакты</h2>
+                    <address class="mb-3">
+                        <p class="text-white-50 mb-2"><span class="me-2" aria-hidden="true">📍</span>г. Москва, проспект Андропова, д. 1</p>
+                        <p class="mb-2"><span class="me-2" aria-hidden="true">📞</span><a class="link-light" href="tel:+74952210000">+7 (495) 221-00-00</a></p>
+                        <p class="small text-white-50 mb-2">Время принятия звонков: 10:00-20:00</p>
+                        <p class="mb-0"><span class="me-2" aria-hidden="true">✉️</span><a class="link-light" href="mailto:info@dreamisland.ru">info@dreamisland.ru</a></p>
+                    </address>
+                    <div class="d-flex flex-wrap gap-3 mt-2 mb-4" aria-label="Мессенджеры">
+                        <a class="d-inline-flex align-items-center gap-2 link-light text-decoration-none" href="https://t.me/ostrov_mechty_demo_7f2c9a" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.6 3.3 18.4 20c-.2 1.2-.9 1.5-1.9.9l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.3-.1-.5-.6-.2L5.9 13.8 1.1 12.3c-1-.3-1-1 .2-1.5L20 3.6c.9-.4 1.7-.1 1.6-.3Z"/></svg>
+                            Telegram
+                        </a>
+                        <a class="d-inline-flex align-items-center gap-2 link-light text-decoration-none" href="https://max.ru/ostrov_mechty_demo_7f2c9a" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="208 208 544 544" aria-hidden="true" focusable="false"><image href="images/max.png" width="960" height="960"/></svg>
+                            MAX
+                        </a>
+                    </div>
+                    <p class="text-white-50 mb-2">Планируете первое путешествие в парк?</p>
+                    <a class="link-light" href="contacts.html#map">Посмотреть на карте и построить маршрут →</a>
+                </div>
+            </div>
+            <div class="border-top border-secondary border-opacity-25 pt-4">
+                <p class="small text-white-50 mb-0">&copy; 2026 «Остров Мечты». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <button type="button" id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 p-3 shadow z-3 d-none" aria-label="Наверх" title="Наверх">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m5 11 7-7 7 7M5 20l7-7 7 7"/></svg>
+    </button>
+    <script src="js/back-to-top.js" defer></script>
+    <script src="js/ticket-window.js" defer></script>
+    <script src="js/search-index.js" defer></script>
+    <script src="js/site-search.js" defer></script>
+    <script src="js/support-chat.js" defer></script>
+</body>
+</html>

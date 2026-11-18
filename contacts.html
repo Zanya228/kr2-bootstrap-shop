@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <script src="js/theme.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Контакты — Парк развлечений «Остров Мечты»</title>
 
@@ -37,18 +38,20 @@
                         <a class="nav-link" href="catalog.html">Аттракционы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="order.html">Билеты</a>
+                        <a class="nav-link" href="events.html">Мероприятия</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a>
                     </li>
+                    <li class="nav-item d-lg-none d-flex align-items-center gap-2 mt-2 mb-2"><form class="header-search d-flex align-items-center rounded-4 px-2" role="search" data-header-search><input type="search" class="form-control form-control-sm bg-transparent border-0 shadow-none text-light px-2" placeholder="Поиск" aria-label="Поиск по сайту" maxlength="200" autocomplete="off"><button type="button" class="btn border-0 text-light p-1 d-inline-flex align-items-center justify-content-center flex-shrink-0" data-site-search aria-label="Найти"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form><button type="button" class="theme-toggle btn btn-outline-light border-0 position-relative overflow-hidden p-2 d-inline-flex align-items-center justify-content-center" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="btn btn-primary" href="order.html">Купить билеты</a></li>
                 </ul>
             </div>
+            <div class="d-none d-lg-flex align-items-center gap-2 ms-auto flex-shrink-0"><form class="header-search d-flex align-items-center rounded-4 px-2" role="search" data-header-search><input type="search" class="form-control form-control-sm bg-transparent border-0 shadow-none text-light px-2" placeholder="Поиск" aria-label="Поиск по сайту" maxlength="200" autocomplete="off"><button type="button" class="btn border-0 text-light p-1 d-inline-flex align-items-center justify-content-center flex-shrink-0" data-site-search aria-label="Найти"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></button></form><button type="button" class="theme-toggle btn btn-outline-light border-0 position-relative overflow-hidden p-2 d-inline-flex align-items-center justify-content-center" data-theme-toggle aria-label="Включить тёмную тему" aria-pressed="false" title="Включить тёмную тему"><svg class="theme-icon theme-icon-moon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1a9 9 0 1 0 10 10Z"/></svg><svg class="theme-icon theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><a class="btn btn-primary" href="order.html">Купить билеты</a></div>
         </div>
     </nav>
 
     <main>
-        <section class="bg-light border-bottom">
+        <section class="bg-body-tertiary border-bottom">
             <div class="container py-5">
                 <nav aria-label="Навигационная цепочка">
                     <ol class="breadcrumb mb-3">
@@ -135,7 +138,7 @@
                 </div>
 
             </div>
-                    <form id="contact-form" class="bg-light border border-primary rounded-4 p-4 mt-4 mt-lg-auto" aria-labelledby="contact-form-title">
+                    <form id="contact-form" class="bg-body-tertiary border border-primary rounded-4 p-4 mt-4 mt-lg-auto" aria-labelledby="contact-form-title">
                         <h2 class="h4 fw-bold mb-2" id="contact-form-title"><span class="me-2" aria-hidden="true">💬</span>Остались вопросы?</h2>
                         <p class="text-body-secondary mb-4">Расскажите, чем мы можем помочь. Подготовим письмо для отправки в вашу почтовую программу.</p>
                         <div class="row g-3">
@@ -148,6 +151,48 @@
                         <p class="small text-body-secondary mt-3 mb-0" id="contact-status" role="status" aria-live="polite">Письмо отправляется через вашу почтовую программу.</p>
                     </form>
                 </div>
+            </div>
+        </section>
+
+        <section class="bg-body-tertiary border-top border-bottom" aria-labelledby="contact-guide-title">
+            <div class="container py-5">
+                <div class="row align-items-end g-3 mb-4">
+                    <div class="col-12 col-lg-8">
+                        <h2 id="contact-guide-title" class="h3 fw-bold mb-2">Перед визитом в парк</h2>
+                        <p class="text-body-secondary mb-0">Выберите, куда обратиться с вашим вопросом и что проверить перед поездкой.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm rounded-4">
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="h5 fw-bold"><span aria-hidden="true">📞</span> Быстрый вопрос</h3>
+                                <p>Уточните режим работы, доступность аттракционов или детали визита по телефону. Звонки принимаются с 10:00 до 20:00.</p>
+                                <a class="btn btn-outline-primary mt-auto align-self-start" href="tel:+74952210000">Позвонить в парк</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm rounded-4">
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="h5 fw-bold"><span aria-hidden="true">🎡</span> Семейный маршрут</h3>
+                                <p>Если едете с детьми, проверьте ограничения по росту и возрасту у выбранных аттракционов. Подберите несколько вариантов для каждого гостя.</p>
+                                <a class="btn btn-outline-primary mt-auto align-self-start" href="catalog.html">Открыть каталог</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <article class="card h-100 border-0 shadow-sm rounded-4">
+                            <div class="card-body d-flex flex-column p-4">
+                                <h3 class="h5 fw-bold"><span aria-hidden="true">🎉</span> Праздник или встреча</h3>
+                                <p>Чтобы обсудить мероприятие, укажите желаемую дату, число гостей и формат. Для детского праздника добавьте возраст участников.</p>
+                                <a class="btn btn-outline-primary mt-auto align-self-start" href="events.html">Посмотреть форматы</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
@@ -168,17 +213,18 @@
                         <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
                             <li><a class="link-light" href="index.html">Главная</a></li>
                             <li><a class="link-light" href="catalog.html">Аттракционы</a></li>
+                            <li><a class="link-light" href="events.html">Мероприятия</a></li>
                             <li><a class="link-light" href="order.html">Билеты</a></li>
-                            <li><a class="link-light" href="index.html#park-story">Легенда парка</a></li>
-                            <li><a class="link-light" href="index.html#faq">Частые вопросы</a></li>
                         </ul>
                     </nav>
+                    <a class="btn btn-primary mt-3" href="order.html">Купить билеты</a>
                 </div>
                 <div class="col-12 col-sm-7 col-lg-4">
                     <h2 class="h6 fw-bold mb-3">Контакты</h2>
                     <address class="mb-3">
                         <p class="text-white-50 mb-2"><span class="me-2" aria-hidden="true">📍</span>г. Москва, проспект Андропова, д. 1</p>
                         <p class="mb-2"><span class="me-2" aria-hidden="true">📞</span><a class="link-light" href="tel:+74952210000">+7 (495) 221-00-00</a></p>
+                        <p class="small text-white-50 mb-2">Время принятия звонков: 10:00-20:00</p>
                         <p class="mb-0"><span class="me-2" aria-hidden="true">✉️</span><a class="link-light" href="mailto:info@dreamisland.ru">info@dreamisland.ru</a></p>
                     </address>
                     <div class="d-flex flex-wrap gap-3 mt-2 mb-4" aria-label="Мессенджеры">
@@ -208,5 +254,9 @@
     </button>
     <script src="js/back-to-top.js" defer></script>
     <script src="js/contacts.js" defer></script>
+    <script src="js/ticket-window.js" defer></script>
+    <script src="js/search-index.js" defer></script>
+    <script src="js/site-search.js" defer></script>
+    <script src="js/support-chat.js" defer></script>
 </body>
 </html>
